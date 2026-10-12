@@ -389,7 +389,7 @@ function saveSessionState() {
             explainability: appState.explainability,
             marketComparison: appState.marketComparison
         };
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+        sessionStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
     } catch (e) {
         console.warn('Unable to persist session state:', e);
     }
@@ -397,7 +397,7 @@ function saveSessionState() {
 
 function restoreSessionState() {
     try {
-        const raw = localStorage.getItem(STORAGE_KEY);
+        const raw = sessionStorage.getItem(STORAGE_KEY);
         if (!raw) {
             renderEmptyStates();
             return;
@@ -534,11 +534,11 @@ function renderOverviewRecentValuation(pred) {
             <div class="recent-val-init-card">
                 <div class="recent-val-stat-row">
                     <div>
-                        <span class="recent-val-sublabel">Latest Valuation</span>
+                        <span class="recent-val-sublabel">Recent Valuation</span>
                         <div class="recent-val-number" id="overview-recent-val-num">₹ 0.00 Lakhs</div>
                     </div>
                     <div style="text-align: right;">
-                        <span class="recent-val-sublabel">Specification Score</span>
+                        <span class="recent-val-sublabel">Investment Score</span>
                         <div class="recent-val-score" id="overview-recent-val-score">0/100</div>
                     </div>
                 </div>
@@ -572,7 +572,7 @@ function renderOverviewRecentValuation(pred) {
                 </div>
                 <div style="text-align: right;">
                     <span class="metric-pill" style="font-size: 0.78rem;">${pred.Valuation_Tier}</span>
-                    <div style="font-size: 0.85rem; font-weight: 800; color: #2563EB; margin-top: 4px;">Score: ${pred.Valuation_Score.toFixed(1)}/100</div>
+                    <div style="font-size: 0.85rem; font-weight: 800; color: #2563EB; margin-top: 4px;">Investment Score: ${pred.Valuation_Score.toFixed(1)}/100</div>
                 </div>
             </div>
 
