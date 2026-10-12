@@ -64,7 +64,7 @@ class ModelService:
             metrics_baseline=metrics_baseline,
             metrics_tuned=metrics_tuned,
             best_parameters=best_params,
-            total_dataset_rows=len(self.df) if not self.df.empty else 80000
+            total_dataset_rows=len(self.df) if not self.df.empty else 0
         )
 
     def get_features(self) -> FeaturesInfoResponseSchema:
