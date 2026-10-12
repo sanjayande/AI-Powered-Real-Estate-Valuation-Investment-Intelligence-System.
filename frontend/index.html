@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REAL ESTATE AI — Valuation & Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-logo">
+                    <span class="logo-icon">🏢</span>
+                    <div class="logo-text">
+                        <span class="brand-name">REAL ESTATE AI</span>
+                        <span class="brand-tagline">Valuation & Intelligence</span>
+                    </div>
+                </div>
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text" id="sidebar-status-text">FastAPI Engine Online</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#overview" class="nav-item active" data-page="page-overview">
+                    <span class="nav-icon">🏠</span> Overview
+                </a>
+                <a href="#valuation" class="nav-item" data-page="page-valuation">
+                    <span class="nav-icon">💰</span> Property Valuation
+                </a>
+                <a href="#result" class="nav-item" data-page="page-result" id="nav-item-result">
+                    <span class="nav-icon">🎯</span> Prediction Result
+                </a>
+                <a href="#insights" class="nav-item" data-page="page-insights" id="nav-item-insights">
+                    <span class="nav-icon">🧠</span> AI Insights
+                </a>
+                <a href="#explain" class="nav-item" data-page="page-explain" id="nav-item-explain">
+                    <span class="nav-icon">🔍</span> Explainable AI
+                </a>
+                <a href="#market" class="nav-item" data-page="page-market" id="nav-item-market">
+                    <span class="nav-icon">📊</span> Market Intelligence
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Workspace Area -->
+        <main class="main-workspace">
+
+            <!-- PAGE 1: OVERVIEW -->
+            <section id="page-overview" class="page-view active">
+                <div class="page-top-bar">
+                    <div>
+                        <div class="tag-label">EXECUTIVE DASHBOARD</div>
+                        <h1 class="page-heading">AI-Powered Property Valuation & Market Intelligence</h1>
+                        <p class="page-subheading">Institutional-grade valuation modeling, local SHAP explainability, and cross-market intelligence.</p>
+                    </div>
+                    <div class="quick-actions">
+                        <button class="btn btn-primary" onclick="navigateTo('page-valuation')">⚡ Run Property Valuation</button>
+                    </div>
+                </div>
+
+                <!-- Live Metrics Grid -->
+                <div class="metrics-grid-6">
+                    <div class="kpi-card">
+                        <div class="kpi-label">Properties Analyzed</div>
+                        <div class="kpi-value" id="kpi-props">80,000</div>
+                        <div class="kpi-meta">Verified Transaction Dataset</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Metropolitan Coverage</div>
+                        <div class="kpi-value" id="kpi-cities">10 Cities</div>
+                        <div class="kpi-meta">Tier-1 & Tier-2 Metros</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Average Property Price</div>
+                        <div class="kpi-value" id="kpi-avg-price">₹ 142.61 L</div>
+                        <div class="kpi-meta">Entire Dataset Mean</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Median Property Price</div>
+                        <div class="kpi-value" id="kpi-med-price">₹ 96.60 L</div>
+                        <div class="kpi-meta">50th Percentile Benchmark</div>
+                    </div>
+                    <div class="kpi-card highlight-card">
+                        <div class="kpi-label">Model R² Accuracy</div>
+                        <div class="kpi-value" id="kpi-r2">0.7772</div>
+                        <div class="kpi-meta">Tuned Gradient Boosting</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Model Test MAE</div>
+                        <div class="kpi-value" id="kpi-mae">₹ 33.31 L</div>
+                        <div class="kpi-meta">Out-of-Sample Error</div>
+                    </div>
+                </div>
+
+                <!-- Overview Main Content Columns -->
+                <div class="dashboard-columns">
+                    <!-- Left: Recent Valuation -->
+                    <div class="dash-card">
+                        <div class="card-header-row">
+                            <h2 class="card-title">Recent Valuation</h2>
+                            <span class="badge badge-neutral" id="recent-val-badge">Current Session</span>
+                        </div>
+                        <div id="recent-valuation-container">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Right: Market Snapshot & Model Status -->
+                    <div class="dash-stack">
+                        <div class="dash-card">
+                            <div class="card-header-row">
+                                <h2 class="card-title">Market Snapshot</h2>
+                                <span class="badge badge-blue">Verified Data</span>
+                            </div>
+                            <div class="snapshot-list">
+                                <div class="snapshot-row">
+                                    <span class="snap-key">Top City by Median Price:</span>
+                                    <strong class="snap-val" id="snap-top-city">Mumbai (₹ 232.54 L)</strong>
+                                </div>
+                                <div class="snapshot-row">
+                                    <span class="snap-key">Primary Valuation Driver:</span>
+                                    <strong class="snap-val" id="snap-top-feat">City Location / Super Built-up Area</strong>
+                                </div>
+                                <div class="snapshot-row">
+                                    <span class="snap-key">Current Property Market Position:</span>
+                                    <strong class="snap-val" id="snap-curr-pos">No active valuation</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dash-card">
+                            <div class="card-header-row">
+                                <h2 class="card-title">Model Status</h2>
+                                <span class="badge badge-green">Operational</span>
+                            </div>
+                            <div class="status-grid-2">
+                                <div class="status-item">
+                                    <span class="status-item-label">Model Engine</span>
+                                    <strong class="status-item-val" id="sys-model-name">GradientBoostingRegressor</strong>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-item-label">Model Status</span>
+                                    <strong class="status-item-val text-green" id="sys-model-status">● Serving Predictions</strong>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-item-label">Dataset Status</span>
+                                    <strong class="status-item-val" id="sys-dataset-status">80,000 Records Loaded</strong>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-item-label">FastAPI API</span>
+                                    <strong class="status-item-val text-green" id="sys-api-status">● Healthy (Port 8000)</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PAGE 2: PROPERTY VALUATION (FORM) -->
+            <section id="page-valuation" class="page-view">
+                <div class="page-top-bar">
+                    <div>
+                        <div class="tag-label">INPUT SPECIFICATIONS</div>
+                        <h1 class="page-heading">Property Valuation</h1>
+                        <p class="page-subheading">Enter exact property parameters to run the tuned machine learning pipeline.</p>
+                    </div>
+                </div>
+
+                <form id="valuation-form" class="form-container">
+                    <!-- SECTION 1: LOCATION -->
+                    <div class="form-section-card">
+                        <h3 class="form-section-header"><span class="section-num">01</span> LOCATION PARAMETERS</h3>
+                        <div class="form-grid-4">
+                            <div class="form-field">
+                                <label for="city">City *</label>
+                                <select id="city" name="City" class="form-input" required></select>
+                            </div>
+                            <div class="form-field">
+                                <label for="locality_type">Locality Tier *</label>
+                                <select id="locality_type" name="Locality_Type" class="form-input" required></select>
+                            </div>
+                            <div class="form-field">
+                                <label for="dist_metro">Distance to Metro (km): <strong id="dist_metro_val">1.2</strong> km</label>
+                                <input type="range" id="dist_metro" name="Distance_to_Metro_km" min="0.1" max="15.0" step="0.1" value="1.2" class="range-slider">
+                            </div>
+                            <div class="form-field">
+                                <label for="dist_city">Distance to City Center (km): <strong id="dist_city_val">6.5</strong> km</label>
+                                <input type="range" id="dist_city" name="Distance_to_City_Center_km" min="0.1" max="30.0" step="0.5" value="6.5" class="range-slider">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 2: PROPERTY DETAILS -->
+                    <div class="form-section-card">
+                        <h3 class="form-section-header"><span class="section-num">02</span> PROPERTY ARCHITECTURE & LAYOUT</h3>
+                        <div class="form-grid-4">
+                            <div class="form-field">
+                                <label for="property_type">Property Type *</label>
+                                <select id="property_type" name="Property_Type" class="form-input" required></select>
+                            </div>
+                            <div class="form-field">
+                                <label for="furnishing_status">Furnishing Status *</label>
+                                <select id="furnishing_status" name="Furnishing_Status" class="form-input" required></select>
+                            </div>
+                            <div class="form-field">
+                                <label for="bhk">Bedrooms (BHK) *</label>
+                                <input type="number" id="bhk" name="BHK" value="3" min="1" max="10" class="form-input" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="bathrooms">Bathrooms *</label>
+                                <input type="number" id="bathrooms" name="Bathrooms" value="3" min="1" max="10" class="form-input" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 3: AREA & FLOOR -->
+                    <div class="form-section-card">
+                        <h3 class="form-section-header"><span class="section-num">03</span> SPATIAL DIMENSIONS & BUILDING</h3>
+                        <div class="form-grid-4">
+                            <div class="form-field">
+                                <label for="super_area">Super Built-up Area (SqFt) *</label>
+                                <input type="number" id="super_area" name="Super_Area_SqFt" value="1650" min="100" max="15000" step="25" class="form-input" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="carpet_area">Carpet Area (SqFt) *</label>
+                                <input type="number" id="carpet_area" name="Carpet_Area_SqFt" value="1250" min="50" max="12000" step="25" class="form-input" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="floor_number">Floor Level *</label>
+                                <input type="number" id="floor_number" name="Floor_Number" value="8" min="0" max="80" class="form-input" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="total_floors">Total Floors in Building *</label>
+                                <input type="number" id="total_floors" name="Total_Floors" value="20" min="1" max="80" class="form-input" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="age">Property Age (Years) *</label>
+                                <input type="number" id="age" name="Age_of_Property" value="4" min="0" max="60" class="form-input" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 4: AMENITIES -->
+                    <div class="form-section-card">
+                        <h3 class="form-section-header"><span class="section-num">04</span> AMENITIES & SECURITY</h3>
+                        <div class="toggle-grid">
+                            <label class="toggle-box">
+                                <input type="checkbox" id="parking" name="Parking" checked>
+                                <span class="toggle-label">Dedicated Parking Slot</span>
+                            </label>
+                            <label class="toggle-box">
+                                <input type="checkbox" id="lift" name="Lift_Available" checked>
+                                <span class="toggle-label">Elevator / Lift Service</span>
+                            </label>
+                            <label class="toggle-box">
+                                <input type="checkbox" id="gated" name="Gated_Community" checked>
+                                <span class="toggle-label">Gated Community Security</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions-bar">
+                        <button type="submit" id="analyze-btn" class="btn btn-primary btn-lg">⚡ ESTIMATE PROPERTY VALUE</button>
+                        <button type="button" class="btn btn-secondary" onclick="resetFormToDefaults()">↺ Reset to Defaults</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- PAGE 3: PREDICTION RESULT -->
+            <section id="page-result" class="page-view">
+                <div class="page-top-bar">
+                    <div>
+                        <div class="tag-label">VALUATION REPORT</div>
+                        <h1 class="page-heading">What Is This Property Worth?</h1>
+                        <p class="page-subheading">Estimated market valuation, statistical confidence interval, and property attributes.</p>
+                    </div>
+                </div>
+
+                <div id="result-empty-state" class="empty-state-card hidden">
+                    <div class="empty-icon">🏠</div>
+                    <h3 class="empty-title">NO PROPERTY VALUATION AVAILABLE</h3>
+                    <p class="empty-desc">Run a property valuation to unlock personalized AI insights, explainability, and market comparison.</p>
+                    <button class="btn btn-primary" onclick="navigateTo('page-valuation')">START PROPERTY VALUATION</button>
+                </div>
+
+                <div id="result-content-view">
+                    <!-- Top Valuation Card -->
+                    <div class="valuation-hero-card">
+                        <div class="hero-top-row">
+                            <span class="badge badge-blue">ESTIMATED MARKET VALUE</span>
+                            <span class="badge badge-neutral" id="res-val-date">Current Evaluation</span>
+                        </div>
+                        <div class="valuation-price-row">
+                            <div class="price-large" id="res-price-lakhs">₹ 0.00 Lakhs</div>
+                            <div class="price-crores" id="res-price-crores">≈ ₹ 0.00 Crores</div>
+                        </div>
+                        <div class="valuation-bounds-box" id="res-confidence-range">
+                            Valuation Range (84% Confidence): ₹ 0.00 L – ₹ 0.00 L
+                        </div>
+                        <div class="bounds-caption">
+                            Calculated using model root mean square error (RMSE: ₹ 70.23 L) reflecting empirical 84% prediction bounds.
+                        </div>
+                    </div>
+
+                    <!-- Metrics Grid 4 -->
+                    <div class="metrics-grid-4">
+                        <div class="metric-card">
+                            <div class="metric-title">Price / Sq.Ft (Super)</div>
+                            <div class="metric-num" id="res-sqft-super">₹ 0</div>
+                            <div class="metric-sub">Super Built-up Area basis</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-title">Price / Sq.Ft (Carpet)</div>
+                            <div class="metric-num" id="res-sqft-carpet">₹ 0</div>
+                            <div class="metric-sub">Direct usable area basis</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-title">Valuation Score</div>
+                            <div class="metric-num text-blue" id="res-score">0.0 / 100</div>
+                            <div class="metric-sub">Model asset quality score</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-title">Valuation Tier</div>
+                            <div class="metric-pill" id="res-tier">Standard Value Asset</div>
+                            <div class="metric-sub" id="res-tier-sub">Market classification</div>
+                        </div>
+                    </div>
+
+                    <!-- Property Summary Card -->
+                    <div class="content-card">
+                        <h3 class="card-section-title">Property Summary</h3>
+                        <div class="summary-specs-grid">
+                            <div class="spec-cell">
+                                <span class="spec-label">City</span>
+                                <strong class="spec-value" id="snap-city">--</strong>
+                            </div>
+                            <div class="spec-cell">
+                                <span class="spec-label">Locality Tier</span>
+                                <strong class="spec-value" id="snap-locality">--</strong>
+                            </div>
+                            <div class="spec-cell">
+                                <span class="spec-label">Property Type</span>
+                                <strong class="spec-value" id="snap-type">--</strong>
+                            </div>
+                            <div class="spec-cell">
+                                <span class="spec-label">Layout</span>
+                                <strong class="spec-value" id="snap-layout">--</strong>
+                            </div>
+                            <div class="spec-cell">
+                                <span class="spec-label">Super Built-up Area</span>
+                                <strong class="spec-value" id="snap-super">-- SqFt</strong>
+                            </div>
+                            <div class="spec-cell">
+                                <span class="spec-label">Carpet Area</span>
+                                <strong class="spec-value" id="snap-carpet">-- SqFt</strong>
+                            </div>
+                            <div class="spec-cell">
+                                <span class="spec-label">Floor Position</span>
+                                <strong class="spec-value" id="snap-floor">--</strong>
+                            </div>
+                            <div class="spec-cell">
+                                <span class="spec-label">Property Age</span>
+                                <strong class="spec-value" id="snap-age">--</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Valuation Summary Card -->
+                    <div class="content-card">
+                        <h3 class="card-section-title">Valuation Summary</h3>
+                        <p class="summary-text" id="res-val-summary">--</p>
+                    </div>
+
+                    <!-- Navigation Action Buttons -->
+                    <div class="cta-actions-bar">
+                        <button class="btn btn-primary" onclick="navigateTo('page-explain')">🔍 Explain This Valuation</button>
+                        <button class="btn btn-secondary" onclick="navigateTo('page-market')">📊 Compare With Market</button>
+                        <button class="btn btn-outline" onclick="navigateTo('page-insights')">🧠 View AI Insights</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PAGE 4: EXPLAINABLE AI -->
+            <section id="page-explain" class="page-view">
+                <div class="page-top-bar">
+                    <div>
+                        <div class="tag-label">SHAP / EXPLAINABLE AI</div>
+                        <h1 class="page-heading">AI Valuation Explanation</h1>
+                        <p class="page-subheading">Understand which specific factors increased or decreased this property's predicted value.</p>
+                    </div>
+                </div>
+
+                <div id="explain-empty-state" class="empty-state-card hidden">
+                    <div class="empty-icon">🔍</div>
+                    <h3 class="empty-title">NO PROPERTY VALUATION AVAILABLE</h3>
+                    <p class="empty-desc">Run a property valuation to generate local SHAP contribution waterfall and personalized value drivers.</p>
+                    <button class="btn btn-primary" onclick="navigateTo('page-valuation')">START PROPERTY VALUATION</button>
+                </div>
+
+                <div id="explain-content-view">
+                    <!-- Predicted Value Banner -->
+                    <div class="summary-banner">
+                        <div class="banner-stat">
+                            <span class="banner-label">Dataset Baseline Value</span>
+                            <strong class="banner-num" id="exp-base-val">₹ 142.51 Lakhs</strong>
+                            <span class="banner-sub">Training set average intercept</span>
+                        </div>
+                        <div class="banner-arrow">➔</div>
+                        <div class="banner-stat">
+                            <span class="banner-label">Net Feature Impact</span>
+                            <strong class="banner-num text-blue" id="exp-net-impact">+₹ 0.00 Lakhs</strong>
+                            <span class="banner-sub">Combined SHAP attribution</span>
+                        </div>
+                        <div class="banner-arrow">➔</div>
+                        <div class="banner-stat highlight">
+                            <span class="banner-label">Final Predicted Value</span>
+                            <strong class="banner-num text-green" id="exp-pred-val">₹ 0.00 Lakhs</strong>
+                            <span class="banner-sub">Output of trained pipeline</span>
+                        </div>
+                    </div>
+
+                    <!-- Drivers Grid: Positive vs Negative -->
+                    <div class="drivers-dual-grid">
+                        <div class="driver-box positive">
+                            <div class="driver-box-header">
+                                <span class="indicator-icon">↑</span>
+                                <div>
+                                    <h3 class="driver-heading">POSITIVE VALUE DRIVERS</h3>
+                                    <p class="driver-sub">Features that increased valuation above baseline</p>
+                                </div>
+                            </div>
+                            <div id="exp-positive-list" class="drivers-list">
+                                <!-- Populated dynamically via JS -->
+                            </div>
+                        </div>
+
+                        <div class="driver-box negative">
+                            <div class="driver-box-header">
+                                <span class="indicator-icon">↓</span>
+                                <div>
+                                    <h3 class="driver-heading">NEGATIVE VALUE DRIVERS</h3>
+                                    <p class="driver-sub">Features that exerted downward price pressure</p>
+                                </div>
+                            </div>
+                            <div id="exp-negative-list" class="drivers-list">
+                                <!-- Populated dynamically via JS -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Local Waterfall Chart -->
+                    <div class="content-card">
+                        <h3 class="card-section-title">Local Valuation Contribution Waterfall</h3>
+                        <p class="section-desc">Exact marginal rupee contribution of each property attribute calculated via SHAP TreeExplainer on the trained regressor.</p>
+                        <div id="waterfall-chart-container" class="waterfall-container">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Factual AI Explanation -->
+                    <div class="content-card">
+                        <h3 class="card-section-title">AI Natural-Language Explanation</h3>
+                        <p class="summary-text" id="exp-ai-narrative">--</p>
+                    </div>
+
+                    <!-- WHAT-IF PROPERTY SIMULATOR -->
+                    <div class="content-card what-if-card">
+                        <div class="card-header-row">
+                            <div>
+                                <h3 class="card-section-title">What-If Property Simulator</h3>
+                                <p class="section-desc">Adjust supported numerical features and evaluate real-time valuation delta through the actual trained ML model.</p>
+                            </div>
+                            <span class="badge badge-blue">Interactive Engine</span>
+                        </div>
+
+                        <div class="what-if-grid">
+                            <div class="what-if-inputs">
+                                <div class="form-field">
+                                    <label for="wi-super-area">Super Built-up Area (SqFt): <strong id="wi-super-val">1,650</strong></label>
+                                    <input type="range" id="wi-super-area" min="500" max="6000" step="50" value="1650" class="range-slider">
+                                </div>
+                                <div class="form-field">
+                                    <label for="wi-dist-city">Distance to City Center (km): <strong id="wi-dist-city-val">6.5</strong> km</label>
+                                    <input type="range" id="wi-dist-city" min="0.5" max="25.0" step="0.5" value="6.5" class="range-slider">
+                                </div>
+                                <div class="form-field">
+                                    <label for="wi-dist-metro">Distance to Metro (km): <strong id="wi-dist-metro-val">1.2</strong> km</label>
+                                    <input type="range" id="wi-dist-metro" min="0.1" max="15.0" step="0.1" value="1.2" class="range-slider">
+                                </div>
+                                <div class="form-field">
+                                    <label for="wi-age">Property Age (Years): <strong id="wi-age-val">4</strong> yrs</label>
+                                    <input type="range" id="wi-age" min="0" max="35" step="1" value="4" class="range-slider">
+                                </div>
+                                <button type="button" id="wi-simulate-btn" class="btn btn-primary" onclick="runWhatIfSimulation()">⚡ SIMULATE VALUE</button>
+                            </div>
+
+                            <div class="what-if-output">
+                                <div class="wi-res-box">
+                                    <span class="wi-res-label">CURRENT VALUE</span>
+                                    <strong class="wi-res-val" id="wi-base-price">₹ 0.00 L</strong>
+                                </div>
+                                <div class="wi-res-box">
+                                    <span class="wi-res-label">SIMULATED VALUE</span>
+                                    <strong class="wi-res-val text-blue" id="wi-sim-price">₹ 0.00 L</strong>
+                                </div>
+                                <div class="wi-res-box highlight">
+                                    <span class="wi-res-label">CHANGE</span>
+                                    <strong class="wi-res-val" id="wi-diff-val">--</strong>
+                                </div>
+                                <div class="wi-summary-text" id="wi-summary-text">
+                                    Modify slider parameters above and click Simulate to evaluate scenario impact.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GLOBAL MODEL BEHAVIOR (Always Available) -->
+                <div class="content-card">
+                    <div class="card-header-row">
+                        <div>
+                            <h3 class="card-section-title">GLOBAL MODEL BEHAVIOR</h3>
+                            <p class="section-desc">Shows which features generally influence property valuations across the 80,000 training dataset.</p>
+                        </div>
+                        <span class="badge badge-neutral">Global SHAP</span>
+                    </div>
+
+                    <div class="global-explain-columns">
+                        <div class="global-left">
+                            <h4 class="subhead">Top Global Model Features</h4>
+                            <div id="top-features-table" class="global-features-list">
+                                <!-- Populated dynamically via JS -->
+                            </div>
+                        </div>
+
+                        <div class="global-right">
+                            <h4 class="subhead">SHAP Summary Plot (Global Impact Distribution)</h4>
+                            <div class="plot-box">
+                                <img src="/visualizations/shap_summary_plot.png" alt="SHAP Summary Plot" class="responsive-plot-img">
+                            </div>
+                            <p class="plot-caption">
+                                Each point represents an individual property sample. The horizontal location indicates whether that feature drove a higher (right) or lower (left) price, while color denotes feature value (red = high, blue = low).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PAGE 5: MARKET INTELLIGENCE -->
+            <section id="page-market" class="page-view">
+                <div class="page-top-bar">
+                    <div>
+                        <div class="tag-label">MARKET CONTEXT</div>
+                        <h1 class="page-heading">Real Estate Market Intelligence</h1>
+                        <p class="page-subheading">Compare this property's valuation with relevant market conditions and comparable properties.</p>
+                    </div>
+                </div>
+
+                <div id="market-empty-state" class="empty-state-card hidden">
+                    <div class="empty-icon">📊</div>
+                    <h3 class="empty-title">NO PROPERTY VALUATION AVAILABLE</h3>
+                    <p class="empty-desc">Run a property valuation to generate contextual market percentiles, unit rates, and comparable property matches.</p>
+                    <button class="btn btn-primary" onclick="navigateTo('page-valuation')">START PROPERTY VALUATION</button>
+                </div>
+
+                <div id="market-content-view">
+                    <!-- Market KPIs -->
+                    <div class="metrics-grid-5">
+                        <div class="metric-card">
+                            <div class="metric-title">Your Property Value</div>
+                            <div class="metric-num text-blue" id="mkt-prop-val">₹ 0.00 L</div>
+                            <div class="metric-sub">Model estimation</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-title">City Median</div>
+                            <div class="metric-num" id="mkt-city-med">₹ 0.00 L</div>
+                            <div class="metric-sub" id="mkt-city-name">Delhi Market</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-title">Price / Sq.Ft</div>
+                            <div class="metric-num" id="mkt-sqft">₹ 0</div>
+                            <div class="metric-sub">Super built-up unit rate</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-title">Market Difference</div>
+                            <div class="metric-num" id="mkt-diff">0.0%</div>
+                            <div class="metric-sub">Relative to city median</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-title">City Percentile</div>
+                            <div class="metric-num highlight" id="mkt-pctile">0th</div>
+                            <div class="metric-sub" id="mkt-nat-pctile">0th National</div>
+                        </div>
+                    </div>
+
+                    <!-- Market Position Track -->
+                    <div class="content-card">
+                        <h3 class="card-section-title">Market Position Distribution</h3>
+                        <p class="section-desc" id="mkt-position-desc">Evaluating market positioning...</p>
+
+                        <div class="position-track-container">
+                            <div class="track-labels">
+                                <span>LOWER MARKET (Budget)</span>
+                                <span>MID-RANGE MEDIAN</span>
+                                <span>HIGHER MARKET (Luxury)</span>
+                            </div>
+                            <div class="position-track-bar">
+                                <div class="position-marker" id="mkt-position-marker" style="left: 50%;">
+                                    <div class="marker-pin"></div>
+                                    <div class="marker-label" id="mkt-marker-label">Your Property: 50th Percentile</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comparable Properties Table -->
+                    <div class="content-card">
+                        <div class="card-header-row">
+                            <div>
+                                <h3 class="card-section-title">Comparable Properties (Verified Transactions)</h3>
+                                <p class="section-desc">Direct matching historical transactions retrieved from the 80,000 dataset in the same city and property classification.</p>
+                            </div>
+                            <span class="badge badge-green">Authentic Records</span>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="styled-table" id="comps-table">
+                                <thead>
+                                    <tr>
+                                        <th>Property ID</th>
+                                        <th>City & Locality</th>
+                                        <th>Type & Layout</th>
+                                        <th>Super Area</th>
+                                        <th>Property Age</th>
+                                        <th>Historical Price</th>
+                                        <th>Price / Sq.Ft</th>
+                                        <th>Variance vs Subject</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="comps-table-body">
+                                    <!-- Populated dynamically via JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Price vs Area Market Context -->
+                    <div class="content-card">
+                        <h3 class="card-section-title">Price vs Built-Up Area Context</h3>
+                        <p class="summary-text" id="mkt-price-area-insight">--</p>
+                        <div class="plot-box">
+                            <img src="/visualizations/price_vs_area.png" alt="Price vs Built-Up Area" class="responsive-plot-img">
+                        </div>
+                        <p class="plot-caption">Scatter distribution of historical transaction prices across built-up areas with linear regression trend ($r=0.635$).</p>
+                    </div>
+                </div>
+
+                <!-- City Market Comparison Table (Macro View) -->
+                <div class="content-card">
+                    <div class="card-header-row">
+                        <div>
+                            <h3 class="card-section-title">Metropolitan Real Estate Index (10 Cities)</h3>
+                            <p class="section-desc">Comparative baseline statistics across all metropolitan territories in the dataset.</p>
+                        </div>
+                        <span class="badge badge-neutral">Full Market Coverage</span>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="styled-table" id="city-market-table">
+                            <thead>
+                                <tr>
+                                    <th>City</th>
+                                    <th>Median Price (₹ Lakhs)</th>
+                                    <th>Average Price (₹ Lakhs)</th>
+                                    <th>Median Price / Sq.Ft</th>
+                                    <th>Verified Properties</th>
+                                    <th>Market Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="city-market-table-body">
+                                <!-- Populated dynamically via JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PAGE 6: AI INSIGHTS -->
+            <section id="page-insights" class="page-view">
+                <div class="page-top-bar">
+                    <div>
+                        <div class="tag-label">DECISION INTELLIGENCE</div>
+                        <h1 class="page-heading">AI Property Intelligence</h1>
+                        <p class="page-subheading">Translate model predictions and market data into understandable, actionable insights.</p>
+                    </div>
+                </div>
+
+                <div id="insights-empty-state" class="empty-state-card hidden">
+                    <div class="empty-icon">🧠</div>
+                    <h3 class="empty-title">NO PROPERTY VALUATION AVAILABLE</h3>
+                    <p class="empty-desc">Run a property valuation to generate executive assessment, key drivers, and decision support.</p>
+                    <button class="btn btn-primary" onclick="navigateTo('page-valuation')">START PROPERTY VALUATION</button>
+                </div>
+
+                <div id="insights-content-view">
+                    <!-- Valuation Assessment Tier -->
+                    <div class="assessment-banner">
+                        <div class="assessment-left">
+                            <span class="assessment-label">VALUATION ASSESSMENT</span>
+                            <h2 class="assessment-title" id="ins-tier-title">PRIME INVESTMENT ASSET</h2>
+                            <p class="assessment-sub" id="ins-tier-sub">Upper Quartile Market (85.3th Percentile)</p>
+                        </div>
+                        <div class="assessment-right">
+                            <div class="score-dial">
+                                <span class="score-number" id="ins-score-num">94.5</span>
+                                <span class="score-denom">/ 100</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dual Cards: Drivers & Discounts -->
+                    <div class="drivers-dual-grid">
+                        <div class="driver-box positive">
+                            <div class="driver-box-header">
+                                <span class="indicator-icon">✓</span>
+                                <h3 class="driver-heading">KEY VALUE DRIVERS</h3>
+                            </div>
+                            <ul id="ins-drivers-list" class="styled-check-list">
+                                <!-- Populated dynamically via JS -->
+                            </ul>
+                        </div>
+
+                        <div class="driver-box negative">
+                            <div class="driver-box-header">
+                                <span class="indicator-icon">⚠</span>
+                                <h3 class="driver-heading">POTENTIAL DISCOUNT FACTORS</h3>
+                            </div>
+                            <ul id="ins-discounts-list" class="styled-warn-list">
+                                <!-- Populated dynamically via JS -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Market Position Explanation -->
+                    <div class="content-card">
+                        <h3 class="card-section-title">Market Positioning Explanation</h3>
+                        <p class="summary-text" id="ins-market-pos-text">--</p>
+                    </div>
+
+                    <!-- AI Summary -->
+                    <div class="content-card">
+                        <h3 class="card-section-title">AI Valuation Synthesis</h3>
+                        <p class="summary-text" id="ins-ai-summary">--</p>
+                    </div>
+
+                    <!-- Decision Support -->
+                    <div class="decision-support-grid">
+                        <div class="decision-card">
+                            <div class="decision-header">
+                                <span class="decision-icon">🏷️</span>
+                                <div>
+                                    <h4 class="decision-title">FOR SELLERS & LISTING AGENTS</h4>
+                                    <p class="decision-sub">Pricing Strategy & Positioning</p>
+                                </div>
+                            </div>
+                            <div class="decision-content" id="ins-seller-guidance">
+                                <!-- Populated dynamically via JS -->
+                            </div>
+                        </div>
+
+                        <div class="decision-card">
+                            <div class="decision-header">
+                                <span class="decision-icon">💼</span>
+                                <div>
+                                    <h4 class="decision-title">FOR BUYERS & INVESTORS</h4>
+                                    <p class="decision-sub">Acquisition & Fair-Value Analysis</p>
+                                </div>
+                            </div>
+                            <div class="decision-content" id="ins-buyer-guidance">
+                                <!-- Populated dynamically via JS -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Regulatory Disclaimer -->
+                    <div class="disclaimer-note">
+                        <strong>Model Estimate Notice:</strong> Indicative evaluation based on statistical Gradient Boosting regression and 80,000 historical market records. Does not constitute certified appraisal or fiduciary financial advice.
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

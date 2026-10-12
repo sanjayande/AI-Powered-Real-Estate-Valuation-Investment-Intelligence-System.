@@ -1,0 +1,501 @@
+Property_ID,City,Locality_Type,Property_Type,BHK,Bathrooms,Super_Area_SqFt,Carpet_Area_SqFt,Floor_Number,Total_Floors,Age_of_Property,Furnishing_Status,Parking,Lift_Available,Gated_Community,Distance_to_Metro_km,Distance_to_City_Center_km,Price_INR_Lakhs
+PROP-060927,Ahmedabad,Affordable,Independent House,3,4,962.1,655.76,11,29,11,Furnished,1,1,0,3.54,13.17,42.64
+PROP-026520,Ahmedabad,Mid-Range,Builder Floor,3,4,1425.19,1126.51,11,40,18,Unfurnished,1,1,1,4.85,10.31,91.73
+PROP-064285,Ahmedabad,Affordable,Builder Floor,2,3,541.78,402.34,31,39,22,Unfurnished,1,1,1,3.81,10.59,22.99
+PROP-020967,Ahmedabad,Mid-Range,Villa,3,3,981.91,660.21,14,26,0,Unfurnished,1,1,1,1.63,7.21,85.35
+PROP-082460,Ahmedabad,Premium,Builder Floor,5,5,1954.08,1356.8,8,14,31,Furnished,1,1,0,3.52,1.07,105.89
+PROP-096354,Ahmedabad,Mid-Range,Independent House,3,3,1157.73,827.69,37,44,2,Semi-Furnished,1,1,1,0.81,8.18,41.67
+PROP-072275,Ahmedabad,Affordable,Apartment,4,5,551.51,455.87,4,6,32,Unfurnished,1,1,1,2.05,9.55,23.64
+PROP-042063,Ahmedabad,Mid-Range,Apartment,2,2,1118.85,767.68,4,14,12,Unfurnished,1,1,0,3.61,8.95,66.95
+PROP-082726,Ahmedabad,Affordable,Apartment,5,6,1087.16,854.45,1,8,31,Furnished,1,1,0,2.46,7.11,39.84
+PROP-084383,Ahmedabad,Affordable,Apartment,1,2,498.95,368.23,12,27,17,Furnished,1,1,0,2.53,13.54,14.18
+PROP-068623,Ahmedabad,Affordable,Independent House,3,3,1085.77,772.69,0,3,5,Unfurnished,1,0,0,2.1,5.52,59.43
+PROP-077511,Ahmedabad,Mid-Range,Apartment,3,3,1989.28,1648.97,11,20,11,Furnished,0,1,1,0.77,5.35,94.79
+PROP-054230,Ahmedabad,Affordable,Villa,1,2,760.08,509.2,29,32,11,Unfurnished,1,1,1,3.41,10.68,16.22
+PROP-070730,Ahmedabad,Affordable,Villa,1,2,1136.24,846.57,6,15,22,Unfurnished,1,1,0,4.08,13.34,47.29
+PROP-031466,Ahmedabad,Mid-Range,Independent House,2,2,1091.67,716.43,4,14,6,Unfurnished,1,1,1,1.6,4.87,46.24
+PROP-031771,Ahmedabad,Mid-Range,Apartment,4,4,1036.21,683.27,25,29,22,Unfurnished,1,1,1,3.72,5.55,35.02
+PROP-005710,Ahmedabad,Mid-Range,Apartment,3,4,1986.91,1656.43,21,38,8,Furnished,1,1,0,5.19,10.3,107.41
+PROP-072989,Ahmedabad,Mid-Range,Independent House,2,3,1328.0,1062.27,3,14,26,Semi-Furnished,1,1,1,1.19,14.49,53.02
+PROP-009803,Ahmedabad,Premium,Independent House,4,5,1534.68,1242.67,27,35,11,Furnished,1,1,1,7.03,10.31,114.29
+PROP-022347,Ahmedabad,Affordable,Apartment,6,6,564.82,432.38,8,11,7,Semi-Furnished,1,1,1,2.82,16.07,15.19
+PROP-015331,Ahmedabad,Mid-Range,Apartment,1,1,1555.95,1066.3,33,42,16,Unfurnished,1,1,1,1.16,9.36,49.23
+PROP-042430,Ahmedabad,Mid-Range,Villa,4,5,1778.58,1417.17,4,22,7,Unfurnished,0,1,0,2.21,4.24,87.04
+PROP-022753,Ahmedabad,Premium,Independent House,3,4,2407.93,1876.3,13,15,3,Semi-Furnished,1,1,0,3.5,11.3,201.97
+PROP-079075,Ahmedabad,Premium,Builder Floor,2,2,2144.75,1434.0,32,43,32,Semi-Furnished,0,1,0,5.52,11.89,92.68
+PROP-094268,Ahmedabad,Affordable,Apartment,4,4,498.97,338.33,24,33,9,Semi-Furnished,1,1,0,0.39,0.68,20.16
+PROP-034447,Ahmedabad,Mid-Range,Villa,4,4,1586.76,1239.39,10,26,36,Unfurnished,0,1,1,1.34,9.72,79.26
+PROP-030621,Ahmedabad,Premium,Independent House,1,2,1595.05,1276.34,1,23,27,Semi-Furnished,0,1,1,1.49,2.24,86.81
+PROP-098652,Ahmedabad,Mid-Range,Builder Floor,3,3,1493.84,1253.97,2,11,7,Semi-Furnished,0,1,1,1.9,0.78,116.07
+PROP-013800,Ahmedabad,Premium,Villa,2,3,1795.6,1205.26,10,28,34,Semi-Furnished,1,1,1,5.97,11.88,112.66
+PROP-018500,Ahmedabad,Mid-Range,Independent House,3,3,1080.16,779.44,7,41,32,Furnished,0,1,1,0.17,8.01,64.0
+PROP-051593,Ahmedabad,Premium,Villa,2,3,3386.81,2821.81,21,38,32,Semi-Furnished,1,1,1,2.42,7.92,182.78
+PROP-084210,Ahmedabad,Premium,Builder Floor,6,6,2177.8,1450.27,36,42,14,Furnished,1,1,1,5.74,1.26,182.81
+PROP-065037,Ahmedabad,Mid-Range,Independent House,3,3,1049.84,880.61,14,38,20,Furnished,1,1,0,7.34,10.68,50.05
+PROP-005068,Ahmedabad,Premium,Independent House,3,3,2033.23,1714.86,4,29,34,Furnished,1,1,0,5.83,5.32,144.29
+PROP-017378,Ahmedabad,Premium,Builder Floor,3,4,2074.44,1758.02,6,7,38,Furnished,0,1,0,1.09,5.24,134.77
+PROP-090288,Ahmedabad,Premium,Apartment,1,2,1698.32,1127.75,27,43,26,Furnished,1,1,0,4.58,12.87,90.96
+PROP-088941,Ahmedabad,Premium,Villa,3,4,1731.63,1141.96,21,29,18,Semi-Furnished,1,1,1,4.36,8.32,80.27
+PROP-088606,Ahmedabad,Mid-Range,Builder Floor,2,2,1540.41,1030.36,1,20,10,Semi-Furnished,0,1,0,2.02,10.59,93.33
+PROP-000811,Ahmedabad,Premium,Independent House,3,4,2327.69,1852.33,18,23,38,Furnished,1,1,1,2.98,2.46,134.27
+PROP-047371,Ahmedabad,Affordable,Builder Floor,2,2,1062.07,753.19,3,10,0,Furnished,1,1,1,3.8,9.67,50.23
+PROP-006831,Ahmedabad,Mid-Range,Independent House,4,4,1093.96,815.3,9,12,11,Unfurnished,1,1,0,0.97,16.32,62.39
+PROP-066557,Ahmedabad,Premium,Apartment,2,2,2868.33,2045.99,21,39,30,Furnished,1,1,1,4.96,7.56,241.45
+PROP-005812,Ahmedabad,Affordable,Apartment,4,4,1100.67,779.89,6,9,9,Furnished,1,1,1,1.79,8.76,52.79
+PROP-038196,Ahmedabad,Mid-Range,Builder Floor,2,3,1345.93,1119.35,2,16,4,Semi-Furnished,1,1,1,3.51,12.56,85.78
+PROP-042732,Ahmedabad,Mid-Range,Independent House,2,2,1070.06,869.64,23,35,18,Semi-Furnished,0,1,0,2.3,18.32,50.4
+PROP-092881,Ahmedabad,Mid-Range,Apartment,3,3,778.25,570.11,13,37,25,Unfurnished,1,1,1,0.37,11.78,35.54
+PROP-038231,Ahmedabad,Mid-Range,Independent House,3,4,877.47,654.66,4,5,37,Unfurnished,1,1,1,6.22,10.41,27.38
+PROP-054900,Ahmedabad,Premium,Builder Floor,3,3,3048.8,2088.65,13,25,33,Unfurnished,1,1,1,2.8,4.24,157.74
+PROP-035805,Ahmedabad,Premium,Builder Floor,4,5,2256.94,1510.49,16,23,21,Furnished,1,1,0,3.75,7.93,127.52
+PROP-032477,Ahmedabad,Mid-Range,Villa,4,4,1079.09,715.22,5,10,10,Unfurnished,1,1,0,3.22,0.0,89.32
+PROP-076037,Bangalore,Mid-Range,Villa,3,4,1297.41,1042.73,13,21,8,Furnished,0,1,0,2.61,3.25,132.59
+PROP-080683,Bangalore,Affordable,Apartment,4,5,953.11,646.58,4,8,18,Unfurnished,0,1,1,2.94,17.91,50.83
+PROP-060857,Bangalore,Affordable,Independent House,3,3,849.38,625.25,29,34,33,Semi-Furnished,0,1,0,2.24,2.44,32.82380530049714
+PROP-014574,Bangalore,Mid-Range,Villa,4,5,1934.82,1640.73,2,7,1,Furnished,0,1,1,2.96,4.45,189.98
+PROP-018318,Bangalore,Mid-Range,Independent House,4,4,1338.59,871.49,25,38,13,Semi-Furnished,1,1,1,0.55,12.4,203.29
+PROP-082596,Bangalore,Affordable,Independent House,2,2,1029.91,704.76,1,4,16,Furnished,1,1,0,0.37,5.93,84.27
+PROP-001620,Bangalore,Mid-Range,Apartment,3,4,1550.13,1238.8,2,20,9,Unfurnished,0,1,0,2.19,11.91,132.07
+PROP-069944,Bangalore,Affordable,Builder Floor,3,4,785.56,535.51,3,11,38,Unfurnished,0,1,0,0.43,12.72,32.41
+PROP-029229,Bangalore,Premium,Villa,2,2,1372.71,1149.89,18,27,16,Semi-Furnished,0,1,1,3.96,8.46,246.45
+PROP-077315,Bangalore,Premium,Apartment,2,2,3273.87,2765.74,1,32,2,Unfurnished,1,1,0,1.41,0.59,424.65
+PROP-072117,Bangalore,Mid-Range,Apartment,4,5,1128.21,871.63,2,4,24,Semi-Furnished,0,1,1,2.08,9.33,129.49
+PROP-029169,Bangalore,Mid-Range,Builder Floor,3,4,1338.73,969.02,0,4,10,Unfurnished,1,1,1,2.55,7.33,187.37
+PROP-031773,Bangalore,Affordable,Builder Floor,3,4,965.02,697.42,0,2,23,Furnished,1,1,1,1.39,13.11,46.9
+PROP-003543,Bangalore,Mid-Range,Villa,1,1,1585.39,1049.39,13,30,31,Semi-Furnished,0,1,1,3.69,6.29,148.53
+PROP-090332,Bangalore,Mid-Range,Villa,4,5,1226.91,991.84,27,38,6,Unfurnished,1,1,1,4.31,6.72,151.29
+PROP-039800,Bangalore,Mid-Range,Independent House,3,4,1262.68,967.92,11,30,1,Unfurnished,1,1,1,2.33,7.68,129.21
+PROP-014413,Bangalore,Premium,Independent House,4,4,1682.29,1375.14,7,24,27,Unfurnished,1,1,0,1.04,7.8,243.07
+PROP-075037,Bangalore,Premium,Villa,3,4,2814.52,2111.81,13,32,2,Semi-Furnished,1,1,0,4.39,15.04,432.38
+PROP-018925,Bangalore,Mid-Range,Builder Floor,2,3,1382.56,1149.6,9,39,17,Furnished,1,1,0,2.57,9.42,131.79
+PROP-043865,Bangalore,Mid-Range,Independent House,3,3,1507.95,1042.51,39,40,32,Semi-Furnished,1,1,0,2.15,5.2,117.86
+PROP-083219,Bangalore,Mid-Range,Apartment,3,4,1632.42,1274.08,8,39,5,Unfurnished,0,1,0,3.65,8.75,199.42
+PROP-077135,Bangalore,Premium,Apartment,5,5,1982.96,1373.14,13,44,24,Furnished,1,1,0,3.56,7.59,287.67
+PROP-092401,Bangalore,Affordable,Builder Floor,3,3,517.64,396.53,3,4,8,Semi-Furnished,1,1,1,3.68,9.75,50.13
+PROP-027690,Bangalore,Mid-Range,Villa,2,2,1709.54,1396.03,0,8,37,Unfurnished,0,1,1,4.86,8.74,163.75
+PROP-076350,Bangalore,Premium,Villa,4,4,2214.77,1629.14,10,22,27,Furnished,0,1,1,3.34,13.14,270.88
+PROP-035349,Bangalore,Mid-Range,Independent House,3,3,791.07,544.51,1,2,13,Semi-Furnished,1,1,1,5.47,6.04,98.41
+PROP-052764,Bangalore,Mid-Range,Independent House,4,4,1143.08,757.34,13,26,25,Unfurnished,1,1,1,3.81,12.64,94.8
+PROP-029620,Bangalore,Premium,Villa,2,2,1512.65,1183.64,34,43,0,Furnished,1,1,0,4.56,7.76,238.18
+PROP-029219,Bangalore,Mid-Range,Apartment,3,4,1207.69,788.36,1,3,4,Unfurnished,1,1,1,1.99,12.15,153.29
+PROP-096098,Bangalore,Affordable,Independent House,2,3,663.46,507.27,1,3,2,Furnished,0,0,0,4.22,4.2,54.82
+PROP-072154,Bangalore,Mid-Range,Apartment,3,4,1508.69,1231.94,20,40,15,Furnished,1,1,1,5.49,0.21,166.27
+PROP-044449,Bangalore,Mid-Range,Builder Floor,2,2,1007.5,659.87,4,16,16,Furnished,0,1,0,2.17,1.38,93.34
+PROP-092144,Bangalore,Mid-Range,Independent House,4,5,1366.05,1065.08,0,4,30,Unfurnished,1,1,1,2.76,7.4,180.95
+PROP-024566,Bangalore,Mid-Range,Villa,2,3,2026.67,1331.3,13,19,21,Unfurnished,1,1,1,5.59,10.0,222.93
+PROP-021494,Bangalore,Mid-Range,Apartment,6,6,1608.66,1340.06,15,39,3,Semi-Furnished,1,1,0,1.14,4.46,197.26
+PROP-066353,Bangalore,Premium,Apartment,2,2,2463.83,1794.28,0,11,30,Furnished,1,1,1,3.24,8.66,287.75
+PROP-008670,Bangalore,Mid-Range,Independent House,3,4,1674.38,1309.24,2,30,32,Furnished,1,1,0,4.89,3.3,202.12
+PROP-018221,Bangalore,Mid-Range,Builder Floor,4,5,1299.41,981.24,6,11,36,Furnished,0,1,0,2.65,8.16,87.33
+PROP-005376,Bangalore,Mid-Range,Apartment,3,4,1431.18,1154.06,5,13,11,Semi-Furnished,0,1,0,5.71,14.99,107.83
+PROP-055798,Bangalore,Mid-Range,Villa,4,4,1761.0,1301.87,9,20,33,Unfurnished,0,1,0,2.83,11.35,160.65
+PROP-007253,Bangalore,Mid-Range,Villa,2,3,944.92,684.4,6,9,8,Furnished,1,1,1,6.6,4.9,149.46
+PROP-090071,Bangalore,Premium,Independent House,4,4,3464.42,2665.9,6,36,10,Semi-Furnished,0,1,0,3.53,12.34,417.91
+PROP-085817,Bangalore,Affordable,Villa,2,2,979.07,693.86,7,38,33,Unfurnished,1,1,0,0.74,4.09,74.63
+PROP-062225,Bangalore,Mid-Range,Apartment,1,2,1707.13,1308.05,22,25,3,Unfurnished,1,1,0,0.25,15.08,194.07
+PROP-001612,Bangalore,Mid-Range,Villa,6,6,1626.49,1236.67,5,13,6,Semi-Furnished,1,1,0,3.14,7.05,166.29
+PROP-029475,Bangalore,Mid-Range,Builder Floor,4,5,1385.53,1164.29,10,26,10,Unfurnished,1,1,1,3.45,11.69,178.8
+PROP-038726,Bangalore,Mid-Range,Independent House,2,2,1352.1,966.81,29,41,29,Semi-Furnished,0,1,0,5.29,8.29,86.39
+PROP-053736,Bangalore,Mid-Range,Apartment,2,3,1806.67,1178.28,5,10,3,Furnished,1,1,0,6.05,3.29,245.45
+PROP-000350,Bangalore,Premium,Apartment,5,6,2408.03,1704.01,5,41,10,Unfurnished,0,1,1,8.02,9.26,449.16
+PROP-094396,Bangalore,Affordable,Independent House,3,3,346.26,255.86,4,20,19,Furnished,0,1,1,3.42,15.01,16.64
+PROP-079839,Chandigarh,Mid-Range,Villa,4,4,1343.73,1136.71,0,2,24,Semi-Furnished,1,1,0,2.18,10.33,107.94
+PROP-094360,Chandigarh,Affordable,Independent House,3,3,948.31,783.28,10,12,7,Semi-Furnished,0,1,1,4.06,8.61,73.18
+PROP-080654,Chandigarh,Affordable,Apartment,3,4,829.25,554.0,3,5,9,Furnished,1,1,1,0.79,12.32,62.08
+PROP-014718,Chandigarh,Premium,Builder Floor,1,1,3032.08,2388.94,26,34,7,Semi-Furnished,1,1,0,2.32,4.67,453.18
+PROP-000561,Chandigarh,Premium,Builder Floor,3,3,2215.94,1871.76,10,13,25,Unfurnished,1,1,1,2.47,8.58,162.64
+PROP-000858,Chandigarh,Affordable,Builder Floor,4,4,942.87,764.15,3,10,32,Semi-Furnished,1,1,0,1.24,12.85,32.41
+PROP-013276,Chandigarh,Mid-Range,Villa,3,4,1024.34,740.74,0,17,36,Furnished,0,1,1,1.63,4.03,90.44
+PROP-007250,Chandigarh,Premium,Independent House,3,3,2047.72,1418.33,8,43,10,Unfurnished,0,1,0,5.7,8.51,302.27
+PROP-071299,Chandigarh,Premium,Independent House,4,5,2889.13,2243.72,8,24,27,Semi-Furnished,0,1,1,6.1,1.43,417.58
+PROP-022112,Chandigarh,Premium,Apartment,5,5,2843.13,2337.91,20,31,15,Furnished,1,1,0,6.53,17.57,310.87
+PROP-016218,Chandigarh,Mid-Range,Apartment,3,4,1534.83,1285.43,1,16,11,Furnished,1,1,1,2.43,10.37,106.85
+PROP-012130,Chandigarh,Mid-Range,Independent House,2,3,534.33,367.92,1,7,39,Unfurnished,0,1,1,1.93,4.94,30.69
+PROP-010399,Chandigarh,Mid-Range,Apartment,4,4,907.13,609.29,25,43,29,Unfurnished,0,1,1,4.7,7.23,59.17
+PROP-045935,Chandigarh,Mid-Range,Builder Floor,2,3,1349.56,1106.63,0,1,18,Unfurnished,1,0,0,1.9,13.28,83.81
+PROP-083011,Chandigarh,Premium,Villa,2,2,2919.6,2231.23,12,42,28,Furnished,1,1,1,2.22,12.23,172.25
+PROP-007591,Chandigarh,Mid-Range,Villa,4,5,914.45,749.67,8,17,5,Furnished,0,1,1,2.43,5.82,112.5
+PROP-063685,Chandigarh,Mid-Range,Villa,4,5,1524.29,1211.32,1,4,13,Furnished,1,1,0,0.75,6.17,151.81
+PROP-000308,Chandigarh,Mid-Range,Builder Floor,1,1,1079.42,793.62,16,43,16,Unfurnished,0,1,1,3.14,1.06,127.28
+PROP-014363,Chandigarh,Mid-Range,Independent House,3,4,1112.71,794.26,12,17,37,Semi-Furnished,1,1,1,3.34,1.83,93.05
+PROP-086070,Chandigarh,Mid-Range,Independent House,6,6,749.09,594.08,10,40,24,Furnished,1,1,1,0.35,6.51,47.17557838061458
+PROP-028211,Chandigarh,Mid-Range,Villa,3,4,1182.69,872.47,5,20,22,Semi-Furnished,1,1,1,0.5,9.17,125.0
+PROP-010146,Chandigarh,Premium,Builder Floor,2,2,1181.36,955.07,3,4,33,Semi-Furnished,1,1,1,2.19,12.9,80.95
+PROP-003311,Chandigarh,Premium,Builder Floor,5,6,2298.2,1701.87,13,14,27,Semi-Furnished,1,1,0,1.27,4.86,288.49
+PROP-097389,Chandigarh,Affordable,Apartment,2,2,552.72,419.31,6,35,32,Semi-Furnished,1,1,1,3.12,8.88,32.71
+PROP-039083,Chandigarh,Mid-Range,Builder Floor,3,4,1689.25,1128.4,35,44,0,Furnished,1,1,1,6.32,2.49,153.02
+PROP-005967,Chandigarh,Premium,Villa,4,5,1118.74,888.76,26,32,5,Semi-Furnished,0,1,0,3.02,4.54,172.38
+PROP-047775,Chandigarh,Mid-Range,Builder Floor,2,2,886.17,624.58,23,30,32,Unfurnished,1,1,1,5.9,9.54,45.15
+PROP-093084,Chandigarh,Mid-Range,Apartment,3,4,793.9,575.33,16,28,39,Semi-Furnished,0,1,1,3.9,9.43,53.24
+PROP-065141,Chandigarh,Mid-Range,Villa,2,2,1272.6,990.02,37,38,5,Unfurnished,0,1,0,4.0,12.76,112.09
+PROP-032386,Chandigarh,Mid-Range,Villa,1,2,2056.6,1724.74,0,6,28,Furnished,1,1,0,0.88,9.98,155.52
+PROP-055600,Chandigarh,Affordable,Builder Floor,1,2,298.5,217.6,0,7,8,Semi-Furnished,1,1,0,3.76,10.61,15.92
+PROP-057801,Chandigarh,Mid-Range,Villa,1,1,1568.0,1058.71,11,17,19,Unfurnished,1,1,1,0.45,14.74,121.79
+PROP-048860,Chandigarh,Affordable,Independent House,3,3,811.31,534.8,6,37,4,Furnished,0,1,1,6.04,7.76,63.0
+PROP-029484,Chandigarh,Affordable,Apartment,3,3,1091.26,863.02,30,39,16,Semi-Furnished,0,1,0,2.6,10.6,82.93
+PROP-098539,Chandigarh,Affordable,Villa,5,5,1115.48,745.78,5,10,17,Semi-Furnished,1,1,0,4.15,5.93,73.3
+PROP-098812,Chandigarh,Mid-Range,Apartment,2,3,441.4,360.06,2,4,24,Unfurnished,1,1,0,2.8,10.33,34.2
+PROP-070898,Chandigarh,Mid-Range,Independent House,2,3,1745.92,1343.17,1,5,30,Semi-Furnished,1,1,0,8.16,11.97,123.02
+PROP-092374,Chandigarh,Premium,Builder Floor,3,3,2496.3,1690.46,11,13,26,Unfurnished,1,1,1,0.8,7.25,273.04
+PROP-000306,Chandigarh,Premium,Villa,2,2,1552.88,1096.3,1,2,17,Semi-Furnished,0,0,1,1.21,7.56,190.46
+PROP-025852,Chandigarh,Mid-Range,Builder Floor,3,3,1415.51,1176.53,7,8,37,Unfurnished,0,1,1,3.16,11.92,68.91
+PROP-093066,Chandigarh,Premium,Villa,3,3,2601.33,2133.86,0,1,4,Furnished,0,1,0,6.31,7.04,412.65
+PROP-029380,Chandigarh,Affordable,Builder Floor,4,4,1169.23,775.1,19,20,17,Furnished,0,1,0,5.28,5.07,110.56
+PROP-096503,Chandigarh,Mid-Range,Builder Floor,1,1,2082.2,1433.24,30,40,5,Semi-Furnished,0,1,1,2.73,12.23,175.85
+PROP-084609,Chandigarh,Mid-Range,Independent House,1,1,534.08,418.48,14,27,6,Unfurnished,1,1,1,6.02,10.7,31.3
+PROP-050083,Chandigarh,Mid-Range,Independent House,2,3,1033.53,725.92,24,34,2,Semi-Furnished,0,1,0,2.12,12.9,66.8
+PROP-085822,Chandigarh,Premium,Villa,2,3,3047.36,2394.23,0,1,30,Semi-Furnished,1,0,1,3.97,8.84,447.32
+PROP-041127,Chandigarh,Premium,Apartment,2,2,2207.22,1601.05,10,19,23,Semi-Furnished,0,1,0,1.33,6.69,310.91
+PROP-035327,Chandigarh,Premium,Builder Floor,3,3,2385.82,1782.86,25,44,19,Semi-Furnished,1,1,1,4.07,11.29,191.35
+PROP-076969,Chandigarh,Mid-Range,Independent House,3,4,1252.66,958.3,19,26,22,Semi-Furnished,0,1,1,0.93,0.21,122.12
+PROP-075809,Chandigarh,Mid-Range,Apartment,2,3,1297.77,1092.65,2,3,25,Unfurnished,1,0,0,3.38,9.44,93.19
+PROP-021655,Chennai,Affordable,Villa,3,4,859.32,585.48,9,36,11,Unfurnished,1,1,1,0.71,8.35,52.93
+PROP-058330,Chennai,Mid-Range,Builder Floor,5,6,917.7,624.05,10,14,36,Furnished,1,1,0,7.34,6.16,88.4
+PROP-012151,Chennai,Mid-Range,Villa,2,2,1801.2,1454.6,20,36,35,Semi-Furnished,0,1,1,3.22,11.2,77.18
+PROP-082115,Chennai,Mid-Range,Villa,4,4,1625.22,1079.26,21,29,37,Semi-Furnished,1,1,1,4.57,11.1,104.36
+PROP-087653,Chennai,Mid-Range,Villa,2,2,2074.78,1640.1,7,25,34,Semi-Furnished,1,1,0,5.22,5.27,159.37
+PROP-001224,Chennai,Mid-Range,Apartment,2,2,1466.38,1054.9,1,3,35,Semi-Furnished,1,0,1,3.5,10.18,67.13
+PROP-016656,Chennai,Mid-Range,Apartment,5,6,1554.02,1196.55,12,25,12,Furnished,1,1,0,3.71,15.62,162.93
+PROP-070948,Chennai,Affordable,Builder Floor,3,4,1104.08,747.03,11,29,28,Unfurnished,1,1,0,4.58,11.42,33.75
+PROP-016046,Chennai,Affordable,Apartment,3,4,689.26,576.79,0,32,33,Furnished,1,1,1,1.44,8.62,31.47
+PROP-008066,Chennai,Mid-Range,Villa,1,1,1668.14,1136.96,22,26,32,Semi-Furnished,1,1,0,2.75,9.77,141.27
+PROP-038787,Chennai,Premium,Apartment,4,5,2325.03,1651.65,2,35,4,Semi-Furnished,1,1,1,5.48,18.04,178.34
+PROP-016396,Chennai,Premium,Apartment,4,4,3843.48,3120.21,23,26,33,Furnished,1,1,1,4.02,8.89,405.71
+PROP-068261,Chennai,Affordable,Apartment,4,4,884.1,581.57,4,7,22,Furnished,1,1,1,0.92,7.89,38.99
+PROP-055328,Chennai,Affordable,Apartment,1,1,874.28,725.84,3,4,7,Semi-Furnished,1,1,1,3.85,5.29,74.29
+PROP-064170,Chennai,Mid-Range,Apartment,6,6,976.17,728.96,5,22,0,Unfurnished,1,1,1,3.12,4.23,110.74
+PROP-086338,Chennai,Mid-Range,Apartment,2,2,1367.34,1097.2,9,11,0,Semi-Furnished,1,1,0,5.83,7.81,157.55
+PROP-076146,Chennai,Mid-Range,Apartment,2,2,1565.42,1232.71,5,8,26,Furnished,0,1,0,3.46,4.89,77.42
+PROP-005931,Chennai,Mid-Range,Builder Floor,5,5,1353.98,1082.35,0,40,11,Unfurnished,1,1,1,2.15,11.56,132.26
+PROP-086506,Chennai,Premium,Independent House,4,5,2521.3,1669.44,1,2,8,Unfurnished,1,0,1,4.49,9.91,317.39
+PROP-007958,Chennai,Affordable,Villa,4,4,474.77,332.11,30,35,5,Unfurnished,0,1,1,3.15,5.63,19.48
+PROP-060892,Chennai,Premium,Independent House,2,3,2815.03,2006.99,0,5,10,Furnished,1,1,1,0.16,12.22,307.08
+PROP-076592,Chennai,Premium,Apartment,4,4,2151.85,1525.15,6,14,35,Semi-Furnished,0,1,1,3.78,9.6,205.9
+PROP-097277,Chennai,Mid-Range,Independent House,3,4,1442.42,1012.89,19,22,24,Semi-Furnished,1,1,0,0.09,13.17,77.74
+PROP-045229,Chennai,Premium,Villa,4,4,1413.62,1136.03,4,24,35,Furnished,1,1,0,2.47,10.57,167.29
+PROP-056045,Chennai,Mid-Range,Villa,2,2,1017.26,683.05,6,14,18,Furnished,1,1,1,4.57,12.32,61.95
+PROP-092089,Chennai,Mid-Range,Independent House,5,6,1302.35,907.6,30,34,39,Furnished,1,1,0,1.08,10.26,73.64
+PROP-098623,Chennai,Affordable,Apartment,2,3,1066.03,811.8,37,39,5,Furnished,1,1,1,7.13,13.36,44.29
+PROP-022445,Chennai,Premium,Builder Floor,1,1,2186.16,1453.93,27,34,35,Unfurnished,1,1,0,1.13,14.5,174.79
+PROP-065357,Chennai,Mid-Range,Villa,3,4,1594.42,1249.47,8,37,4,Unfurnished,1,1,1,4.6,12.51,78.42
+PROP-063524,Chennai,Mid-Range,Independent House,1,1,1510.08,1004.8,0,4,15,Semi-Furnished,0,1,0,1.18,7.74,116.2
+PROP-099321,Chennai,Premium,Builder Floor,5,5,2165.45,1819.91,18,26,28,Furnished,0,1,0,1.3,20.43,108.18
+PROP-000016,Chennai,Mid-Range,Apartment,2,3,1953.02,1524.12,35,41,32,Unfurnished,0,1,1,3.95,7.15,147.28
+PROP-027793,Chennai,Mid-Range,Apartment,4,5,1912.91,1581.25,10,13,13,Furnished,1,1,1,1.6,11.45,183.98
+PROP-018129,Chennai,Affordable,Independent House,5,6,1071.04,880.95,4,16,7,Semi-Furnished,1,1,0,1.52,7.17,76.03
+PROP-095729,Chennai,Mid-Range,Builder Floor,4,5,999.16,706.94,17,36,12,Semi-Furnished,1,1,1,3.84,9.75,58.6
+PROP-083505,Chennai,Premium,Apartment,2,3,2746.65,1993.63,1,25,20,Furnished,1,1,1,5.68,12.22,248.15
+PROP-031531,Chennai,Mid-Range,Apartment,1,2,1497.74,1100.92,27,28,1,Furnished,1,1,1,1.7,13.87,88.88
+PROP-063348,Chennai,Mid-Range,Villa,2,2,1056.93,709.66,40,44,34,Semi-Furnished,0,1,1,2.82,13.7,63.49
+PROP-004290,Chennai,Affordable,Apartment,1,2,759.82,549.64,20,37,30,Unfurnished,0,1,0,6.47,7.94,123.1006064969686
+PROP-079602,Chennai,Mid-Range,Apartment,3,4,1249.31,985.73,0,1,19,Unfurnished,1,0,0,3.12,11.84,49.42
+PROP-083106,Chennai,Mid-Range,Independent House,5,6,1421.25,1176.09,0,3,0,Semi-Furnished,0,0,1,3.91,5.71,171.25
+PROP-069788,Chennai,Affordable,Independent House,4,4,1205.07,962.25,4,9,39,Semi-Furnished,1,1,0,2.9,9.78,70.59
+PROP-048027,Chennai,Mid-Range,Villa,5,6,1596.33,1199.14,6,19,26,Furnished,1,1,0,3.69,13.12,94.68
+PROP-003047,Chennai,Mid-Range,Villa,1,1,1254.38,907.72,8,10,31,Unfurnished,0,1,0,4.42,4.69,56.17
+PROP-038049,Chennai,Mid-Range,Apartment,4,4,1614.33,1135.55,9,23,14,Unfurnished,1,1,1,1.31,6.37,117.15
+PROP-059170,Chennai,Mid-Range,Independent House,2,3,1696.04,1295.4,4,13,35,Semi-Furnished,1,1,0,4.67,11.71,137.76
+PROP-052033,Chennai,Premium,Independent House,1,1,3009.06,2432.21,2,10,22,Unfurnished,1,1,0,8.12,8.33,234.65
+PROP-066718,Chennai,Mid-Range,Builder Floor,2,2,1016.77,735.98,7,38,24,Semi-Furnished,1,1,0,5.18,6.72,55.68
+PROP-009396,Chennai,Mid-Range,Builder Floor,2,3,1314.4,917.39,7,11,21,Unfurnished,1,1,0,1.08,10.47,133.53
+PROP-030287,Chennai,Affordable,Independent House,2,3,911.59,762.04,10,12,29,Unfurnished,1,1,1,0.52,13.46,32.92
+PROP-071639,Delhi,Mid-Range,Apartment,6,6,1710.99,1387.82,3,44,37,Unfurnished,0,1,0,2.55,1.61,275.68
+PROP-090838,Delhi,Affordable,Villa,6,6,718.88,566.29,1,19,8,Semi-Furnished,1,1,1,0.42,14.42,77.14
+PROP-010403,Delhi,Affordable,Builder Floor,2,3,855.93,690.73,2,36,31,Unfurnished,1,1,1,3.75,10.74,66.23
+PROP-037242,Delhi,Mid-Range,Apartment,1,2,1494.93,1135.13,19,26,17,Unfurnished,0,1,0,4.95,15.6,130.04
+PROP-087798,Delhi,Affordable,Apartment,5,5,905.86,741.14,0,25,19,Furnished,0,1,0,0.32,12.89,83.35
+PROP-097760,Delhi,Mid-Range,Independent House,4,5,1387.8,1028.84,5,40,33,Unfurnished,1,1,1,1.98,8.87,127.97
+PROP-048069,Delhi,Premium,Apartment,1,1,2102.58,1536.4,12,37,15,Unfurnished,1,1,1,4.07,1.75,299.76
+PROP-040749,Delhi,Premium,Apartment,2,2,2079.9,1413.27,14,21,4,Furnished,0,1,1,5.72,9.53,623.89
+PROP-088028,Delhi,Mid-Range,Builder Floor,3,4,1092.2,760.26,5,10,28,Semi-Furnished,0,1,0,0.88,13.5,111.98
+PROP-042230,Delhi,Affordable,Villa,5,5,758.32,542.73,20,30,17,Furnished,1,1,0,6.58,9.46,49.24
+PROP-004594,Delhi,Mid-Range,Independent House,3,4,1319.18,963.95,28,29,19,Semi-Furnished,0,1,1,1.62,11.13,157.66
+PROP-022483,Delhi,Affordable,Independent House,1,2,858.33,643.55,3,5,39,Semi-Furnished,0,1,1,1.5,8.24,45.23
+PROP-032589,Delhi,Affordable,Villa,2,3,1145.69,880.61,28,31,24,Furnished,1,1,1,3.0,8.95,159.39
+PROP-055408,Delhi,Premium,Apartment,2,2,2275.94,1680.48,5,43,30,Semi-Furnished,1,1,0,2.51,9.14,380.53
+PROP-027780,Delhi,Affordable,Apartment,2,2,707.76,568.02,6,11,16,Semi-Furnished,1,1,1,0.13,6.57,87.86
+PROP-049594,Delhi,Premium,Independent House,3,4,1511.2,1267.9,3,11,4,Furnished,1,1,1,1.44,13.63,360.65
+PROP-067472,Delhi,Affordable,Builder Floor,3,4,846.65,574.44,5,43,39,Semi-Furnished,0,1,0,1.91,11.67,67.74
+PROP-068994,Delhi,Mid-Range,Apartment,1,2,1203.37,921.47,1,7,36,Semi-Furnished,0,1,1,3.19,0.67,245.78
+PROP-085726,Delhi,Mid-Range,Builder Floor,3,4,1469.14,1172.64,7,9,33,Furnished,1,1,0,2.14,16.38,171.84
+PROP-037491,Delhi,Mid-Range,Independent House,1,2,876.49,623.39,6,27,39,Unfurnished,1,1,0,1.4,16.39,112.02
+PROP-051838,Delhi,Premium,Villa,2,3,2595.24,2064.17,4,9,38,Unfurnished,0,1,0,0.22,1.09,385.72
+PROP-059575,Delhi,Affordable,Builder Floor,3,4,736.04,615.21,5,43,20,Furnished,1,1,1,3.32,13.81,86.21
+PROP-056489,Delhi,Premium,Villa,3,4,3141.54,2275.92,0,4,37,Unfurnished,1,1,0,0.89,10.04,327.51
+PROP-069537,Delhi,Mid-Range,Apartment,4,5,1097.98,928.69,10,30,5,Unfurnished,1,1,0,0.48,9.25,218.69
+PROP-042030,Delhi,Mid-Range,Villa,4,5,1567.78,1225.15,29,44,4,Semi-Furnished,0,1,1,6.0,5.9,248.54
+PROP-098976,Delhi,Affordable,Independent House,3,3,1087.74,827.4,6,40,38,Furnished,1,1,0,4.08,9.19,135.15
+PROP-022932,Delhi,Mid-Range,Independent House,1,2,876.27,599.37,7,11,8,Furnished,0,1,0,6.8,10.15,86.2
+PROP-006173,Delhi,Mid-Range,Independent House,4,5,1425.27,1035.12,10,20,1,Unfurnished,1,1,0,5.13,6.57,185.25
+PROP-078247,Delhi,Premium,Builder Floor,4,5,1553.61,1037.54,1,9,0,Furnished,1,1,1,1.31,10.73,422.03
+PROP-068425,Delhi,Mid-Range,Independent House,3,3,937.21,640.53,11,34,8,Unfurnished,1,1,0,0.85,10.51,131.05
+PROP-006099,Delhi,Affordable,Apartment,3,4,426.9,315.68,9,12,3,Unfurnished,1,1,1,2.26,7.65,74.57
+PROP-070316,Delhi,Mid-Range,Independent House,2,2,1153.87,959.27,0,3,0,Semi-Furnished,1,1,1,0.71,9.37,180.93
+PROP-032672,Delhi,Affordable,Builder Floor,3,4,887.06,587.03,5,11,10,Furnished,1,1,1,6.41,11.74,117.89
+PROP-063650,Delhi,Affordable,Villa,5,5,762.0,537.82,1,13,17,Unfurnished,0,1,1,2.42,16.5,83.43
+PROP-060945,Delhi,Premium,Builder Floor,1,1,2419.04,1808.62,2,27,29,Furnished,1,1,0,1.96,11.47,1406.342827007649
+PROP-076944,Delhi,Premium,Independent House,2,3,2503.93,1735.42,25,37,26,Furnished,1,1,0,0.73,9.8,143.97721583610655
+PROP-060022,Delhi,Mid-Range,Independent House,6,6,1231.05,908.79,2,30,1,Semi-Furnished,1,1,1,4.88,7.5,175.33
+PROP-040484,Delhi,Affordable,Builder Floor,3,4,1167.59,916.37,13,37,13,Semi-Furnished,1,1,0,3.23,11.92,174.7
+PROP-020448,Delhi,Mid-Range,Builder Floor,3,3,874.73,654.13,0,1,12,Semi-Furnished,1,0,1,5.88,16.9,137.56
+PROP-035711,Delhi,Affordable,Apartment,2,3,970.65,692.63,0,3,26,Furnished,1,1,1,1.39,7.33,99.93
+PROP-008069,Delhi,Mid-Range,Independent House,5,5,1237.46,852.92,5,23,15,Furnished,1,1,0,5.14,10.17,149.58
+PROP-075762,Delhi,Premium,Apartment,1,2,3199.34,2703.5,6,8,8,Unfurnished,0,1,0,3.67,6.94,1082.88
+PROP-039173,Delhi,Affordable,Villa,1,2,643.95,510.75,27,28,9,Unfurnished,0,1,1,1.62,9.7,55.88
+PROP-086817,Delhi,Mid-Range,Villa,2,2,1486.06,1205.18,1,7,36,Semi-Furnished,1,1,0,2.87,8.26,195.56
+PROP-048029,Delhi,Premium,Independent House,2,2,2798.05,1945.28,15,26,17,Furnished,0,1,0,2.65,13.52,533.79
+PROP-007647,Delhi,Mid-Range,Independent House,3,4,1582.69,1229.65,10,22,39,Semi-Furnished,1,1,1,3.56,4.96,148.13
+PROP-033446,Delhi,Affordable,Independent House,3,3,956.57,736.05,2,3,1,Furnished,1,0,1,6.27,14.04,112.01
+PROP-083238,Delhi,Premium,Independent House,2,3,822.08,623.31,0,35,27,Semi-Furnished,1,1,0,7.02,4.86,207.08
+PROP-097331,Delhi,Premium,Apartment,2,2,3276.6,2565.94,20,26,10,Semi-Furnished,0,1,1,3.87,11.5,697.79
+PROP-043285,Delhi,Premium,Builder Floor,2,3,2095.18,1715.22,15,38,17,Furnished,0,1,0,4.0,10.94,424.39
+PROP-039543,Hyderabad,Affordable,Builder Floor,3,4,584.27,392.17,4,18,15,Semi-Furnished,1,1,0,4.19,1.78,34.67
+PROP-081175,Hyderabad,Affordable,Apartment,2,3,863.78,600.73,33,39,15,Furnished,1,1,0,5.3,6.44,47.34
+PROP-000182,Hyderabad,Mid-Range,Independent House,1,2,1621.91,1185.37,8,15,38,Furnished,1,1,1,3.23,12.24,97.21
+PROP-023490,Hyderabad,Mid-Range,Independent House,2,3,1510.01,1278.03,1,7,31,Furnished,1,1,0,0.37,11.9,77.39
+PROP-011733,Hyderabad,Premium,Apartment,4,4,2833.34,2105.87,2,5,6,Semi-Furnished,0,1,1,2.33,11.39,233.35
+PROP-073383,Hyderabad,Affordable,Apartment,2,3,1040.57,742.68,28,36,17,Semi-Furnished,0,1,1,2.9,9.68,69.65
+PROP-039687,Hyderabad,Affordable,Independent House,1,2,766.51,649.08,28,30,3,Unfurnished,1,1,1,2.22,13.19,50.99
+PROP-068695,Hyderabad,Affordable,Villa,4,5,609.48,486.46,11,44,23,Unfurnished,1,1,0,2.72,4.86,23.0
+PROP-084180,Hyderabad,Mid-Range,Apartment,1,2,1091.82,738.2,23,42,13,Unfurnished,1,1,1,0.48,12.59,96.12
+PROP-068230,Hyderabad,Mid-Range,Villa,4,4,1251.52,972.56,31,41,14,Semi-Furnished,1,1,0,4.78,8.78,71.36
+PROP-095714,Hyderabad,Mid-Range,Apartment,2,3,1193.87,997.86,2,5,7,Unfurnished,1,1,0,3.51,8.06,85.61
+PROP-066647,Hyderabad,Mid-Range,Builder Floor,2,3,820.99,545.39,13,28,27,Furnished,1,1,1,2.42,6.86,54.27
+PROP-031312,Hyderabad,Mid-Range,Builder Floor,4,5,1559.39,1105.05,23,37,11,Semi-Furnished,1,1,0,3.68,11.54,104.82
+PROP-052288,Hyderabad,Mid-Range,Builder Floor,2,3,1338.33,1035.71,3,17,36,Unfurnished,1,1,1,5.09,15.16,44.12
+PROP-092020,Hyderabad,Mid-Range,Builder Floor,2,2,1433.0,1193.86,16,22,22,Furnished,1,1,1,1.72,7.35,110.01
+PROP-028401,Hyderabad,Premium,Apartment,3,3,995.21,705.4,1,42,36,Unfurnished,1,1,0,1.78,12.26,54.2
+PROP-089457,Hyderabad,Mid-Range,Villa,4,5,685.26,460.03,30,35,35,Semi-Furnished,0,1,0,1.79,12.16,25.26
+PROP-092260,Hyderabad,Premium,Apartment,2,3,2281.07,1898.0,5,8,24,Furnished,0,1,1,1.36,4.65,276.51
+PROP-087080,Hyderabad,Mid-Range,Apartment,5,5,1441.29,1171.1,22,33,36,Unfurnished,0,1,0,2.47,14.02,92.91
+PROP-032153,Hyderabad,Mid-Range,Independent House,2,3,1064.76,855.4,6,13,32,Semi-Furnished,1,1,1,2.51,5.77,79.35
+PROP-059475,Hyderabad,Mid-Range,Villa,3,4,1593.09,1139.86,10,22,36,Unfurnished,0,1,1,4.04,6.37,91.49
+PROP-081985,Hyderabad,Premium,Villa,3,3,2448.46,1665.3,9,10,35,Semi-Furnished,1,1,0,2.57,14.51,113.96
+PROP-013618,Hyderabad,Mid-Range,Apartment,5,6,1309.96,1112.38,17,30,2,Unfurnished,1,1,1,3.04,6.37,113.93
+PROP-007756,Hyderabad,Premium,Builder Floor,3,4,3027.25,2201.96,0,6,29,Unfurnished,0,1,0,5.2,5.49,389.76
+PROP-083819,Hyderabad,Mid-Range,Independent House,2,2,1810.53,1354.42,0,1,21,Unfurnished,1,0,1,3.9,15.55,85.02
+PROP-065468,Hyderabad,Mid-Range,Builder Floor,4,5,1286.06,1061.76,9,18,38,Semi-Furnished,1,1,1,2.04,5.29,105.52
+PROP-051269,Hyderabad,Mid-Range,Villa,2,2,1427.37,1205.41,6,27,25,Semi-Furnished,1,1,1,0.81,16.1,81.67
+PROP-025199,Hyderabad,Mid-Range,Builder Floor,1,2,1386.6,1065.11,1,6,23,Unfurnished,0,1,0,4.45,8.9,103.87
+PROP-036370,Hyderabad,Affordable,Villa,4,4,1022.2,785.62,23,28,13,Furnished,1,1,1,3.17,4.14,71.15
+PROP-056053,Hyderabad,Mid-Range,Apartment,2,3,1194.33,800.88,2,13,4,Unfurnished,1,1,1,0.39,11.77,72.88
+PROP-027432,Hyderabad,Mid-Range,Villa,4,5,1317.12,1089.38,3,8,13,Semi-Furnished,1,1,0,3.93,6.33,65.75
+PROP-024339,Hyderabad,Premium,Apartment,2,3,1450.37,1069.64,11,16,14,Furnished,1,1,1,4.52,7.54,238.29
+PROP-057266,Hyderabad,Affordable,Apartment,2,2,632.02,427.94,6,9,37,Furnished,0,1,0,3.74,10.45,33.06
+PROP-065396,Hyderabad,Premium,Apartment,1,2,677.17,500.83,10,30,31,Unfurnished,0,1,0,5.23,11.31,62.61
+PROP-015143,Hyderabad,Affordable,Villa,3,3,401.59,272.06,13,29,32,Unfurnished,1,1,1,2.42,9.96,16.05
+PROP-004460,Hyderabad,Mid-Range,Independent House,2,3,1418.13,1064.08,40,42,27,Unfurnished,1,1,1,3.61,8.23,67.91
+PROP-092189,Hyderabad,Mid-Range,Apartment,4,4,1262.85,950.7,2,14,32,Unfurnished,0,1,0,1.81,17.71,76.09
+PROP-018878,Hyderabad,Mid-Range,Villa,4,5,1438.51,969.37,2,6,25,Furnished,1,1,1,0.2,8.6,263.45645020041434
+PROP-063964,Hyderabad,Affordable,Independent House,2,3,946.22,664.1,11,20,38,Furnished,1,1,1,5.17,12.57,38.04
+PROP-021610,Hyderabad,Premium,Independent House,1,1,2849.22,1866.6,21,43,36,Unfurnished,1,1,0,4.63,17.57,209.13
+PROP-085972,Hyderabad,Mid-Range,Builder Floor,2,3,1226.32,1009.73,13,20,2,Unfurnished,0,1,0,1.26,8.82,149.29
+PROP-067278,Hyderabad,Mid-Range,Apartment,6,6,1633.42,1329.53,0,37,7,Semi-Furnished,1,1,0,1.34,8.01,145.74
+PROP-090856,Hyderabad,Affordable,Builder Floor,4,4,763.69,560.22,6,11,4,Furnished,0,1,1,1.44,9.46,26.1
+PROP-055419,Hyderabad,Premium,Villa,2,3,2971.28,2106.36,0,5,9,Semi-Furnished,1,1,1,1.15,0.43,376.1
+PROP-088019,Hyderabad,Mid-Range,Villa,3,3,1301.73,938.14,13,32,14,Semi-Furnished,1,1,0,6.39,12.91,98.79
+PROP-014398,Hyderabad,Premium,Builder Floor,2,3,3442.74,2659.82,7,40,27,Unfurnished,1,1,1,1.02,4.59,281.09
+PROP-058892,Hyderabad,Mid-Range,Apartment,2,2,809.89,539.96,2,23,3,Furnished,1,1,1,4.04,15.5,49.72
+PROP-044143,Hyderabad,Affordable,Builder Floor,5,6,857.7,642.39,2,12,39,Unfurnished,1,1,1,3.42,12.19,26.56
+PROP-036108,Hyderabad,Mid-Range,Villa,2,2,1220.3,826.21,2,21,32,Furnished,1,1,1,3.97,8.19,129.09652145641468
+PROP-014072,Hyderabad,Mid-Range,Independent House,3,3,1263.97,859.91,1,4,27,Furnished,1,1,1,2.15,11.03,91.61
+PROP-084749,Jaipur,Premium,Apartment,2,2,3249.97,2222.26,7,39,9,Semi-Furnished,1,1,0,4.95,10.18,185.04
+PROP-029796,Jaipur,Mid-Range,Independent House,4,5,1874.88,1353.63,32,33,36,Unfurnished,0,1,1,0.58,14.43,78.68
+PROP-066558,Jaipur,Mid-Range,Villa,3,3,1207.31,902.57,4,26,18,Semi-Furnished,0,1,0,4.85,12.91,45.48
+PROP-077657,Jaipur,Premium,Builder Floor,2,2,3612.28,2878.05,5,14,21,Furnished,0,1,0,2.54,16.8,209.41
+PROP-001516,Jaipur,Affordable,Independent House,5,6,937.71,796.91,10,11,11,Furnished,1,1,0,0.85,10.55,25.06
+PROP-028129,Jaipur,Mid-Range,Villa,2,2,1999.56,1498.27,12,29,4,Furnished,1,1,1,2.79,12.77,54.62
+PROP-077843,Jaipur,Mid-Range,Apartment,4,5,1442.73,954.36,30,31,37,Semi-Furnished,1,1,0,1.94,8.31,24.1
+PROP-023989,Jaipur,Affordable,Apartment,3,4,495.9,336.24,0,37,14,Furnished,1,1,1,0.97,10.05,16.2
+PROP-000049,Jaipur,Premium,Builder Floor,1,1,2087.86,1491.6,21,39,25,Furnished,1,1,0,2.9,7.6,83.9
+PROP-044320,Jaipur,Affordable,Apartment,1,2,970.53,672.71,0,12,36,Semi-Furnished,0,1,1,4.92,15.22,22.14
+PROP-078809,Jaipur,Affordable,Villa,2,3,777.21,550.47,18,27,32,Semi-Furnished,0,1,1,3.19,8.87,18.7
+PROP-023960,Jaipur,Mid-Range,Builder Floor,3,4,999.09,718.07,32,34,18,Furnished,0,1,1,3.86,15.51,29.7
+PROP-009552,Jaipur,Mid-Range,Villa,3,3,1523.16,1042.03,1,3,29,Furnished,1,0,0,7.94,10.56,73.58
+PROP-088673,Jaipur,Mid-Range,Villa,2,2,1831.67,1459.19,3,17,5,Semi-Furnished,1,1,1,1.99,11.05,98.27
+PROP-082294,Jaipur,Affordable,Builder Floor,2,2,1303.48,926.06,1,7,23,Unfurnished,1,1,0,0.87,5.56,43.06
+PROP-060969,Jaipur,Mid-Range,Builder Floor,3,3,952.99,775.22,18,32,38,Furnished,0,1,0,5.22,6.68,31.55
+PROP-098001,Jaipur,Premium,Independent House,1,1,1590.49,1217.43,6,8,32,Furnished,1,1,1,0.12,6.86,132.53
+PROP-022887,Jaipur,Premium,Apartment,5,5,3407.21,2728.89,11,14,23,Unfurnished,1,1,0,5.28,7.52,144.96
+PROP-051001,Jaipur,Mid-Range,Builder Floor,3,4,385.03,260.59,1,38,13,Semi-Furnished,0,1,1,2.67,9.4,12.14
+PROP-037784,Jaipur,Premium,Apartment,3,4,3030.99,2456.63,32,41,15,Semi-Furnished,0,1,0,2.87,15.1,125.65
+PROP-074966,Jaipur,Premium,Apartment,2,3,1797.83,1432.35,9,12,38,Semi-Furnished,1,1,1,6.34,12.99,90.72
+PROP-031019,Jaipur,Mid-Range,Villa,1,2,1113.64,757.05,23,30,0,Semi-Furnished,1,1,1,0.64,13.42,56.55
+PROP-032538,Jaipur,Mid-Range,Independent House,2,2,1123.25,748.26,14,23,15,Unfurnished,0,1,0,2.58,14.75,35.43
+PROP-033279,Jaipur,Mid-Range,Independent House,2,2,1515.44,1129.43,20,29,7,Semi-Furnished,0,1,0,1.93,11.73,80.1
+PROP-046843,Jaipur,Mid-Range,Independent House,3,4,1494.0,1034.72,5,34,35,Semi-Furnished,1,1,1,6.93,2.28,170.7344310516798
+PROP-041104,Jaipur,Mid-Range,Builder Floor,2,3,1467.29,1129.42,4,15,3,Furnished,1,1,0,2.02,6.36,41.59
+PROP-022120,Jaipur,Mid-Range,Independent House,4,4,1067.36,863.13,17,23,32,Semi-Furnished,1,1,0,1.94,6.29,24.5
+PROP-092246,Jaipur,Affordable,Apartment,2,3,920.92,598.88,2,23,34,Furnished,0,1,0,4.3,7.29,27.45
+PROP-004285,Jaipur,Affordable,Apartment,2,2,606.23,428.86,4,13,29,Furnished,1,1,0,1.94,10.36,13.35
+PROP-060383,Jaipur,Mid-Range,Builder Floor,3,3,1312.94,916.09,9,10,7,Furnished,1,1,1,3.75,7.8,29.59
+PROP-041656,Jaipur,Mid-Range,Villa,2,2,1845.51,1279.18,4,18,18,Semi-Furnished,1,1,0,2.81,10.25,65.61
+PROP-049731,Jaipur,Affordable,Apartment,2,3,669.64,563.06,22,44,10,Semi-Furnished,1,1,0,2.27,17.78,25.49
+PROP-090445,Jaipur,Affordable,Builder Floor,2,3,687.62,543.98,5,12,27,Semi-Furnished,1,1,1,2.03,16.44,16.57
+PROP-045332,Jaipur,Mid-Range,Builder Floor,1,1,1033.09,835.82,8,44,18,Unfurnished,1,1,0,1.65,5.12,34.61
+PROP-053094,Jaipur,Premium,Builder Floor,3,3,1873.45,1568.4,0,2,7,Unfurnished,1,0,1,3.71,10.84,149.66
+PROP-090257,Jaipur,Premium,Builder Floor,3,4,1963.03,1447.27,19,31,14,Semi-Furnished,1,1,0,6.02,12.13,86.05
+PROP-046419,Jaipur,Affordable,Villa,3,4,872.83,590.56,17,31,29,Unfurnished,0,1,0,6.57,5.41,25.96
+PROP-077499,Jaipur,Mid-Range,Independent House,3,3,1084.69,743.76,12,14,15,Unfurnished,0,1,0,3.86,4.43,59.63
+PROP-049755,Jaipur,Mid-Range,Independent House,4,4,1602.66,1337.21,3,5,12,Semi-Furnished,0,1,1,4.04,12.11,57.93
+PROP-090908,Jaipur,Affordable,Independent House,3,3,323.86,228.43,0,9,11,Semi-Furnished,1,1,0,1.06,6.64,6.82
+PROP-043178,Jaipur,Affordable,Villa,3,3,727.82,514.59,0,9,28,Furnished,1,1,1,5.42,7.14,14.77
+PROP-023240,Jaipur,Mid-Range,Apartment,2,3,709.68,519.06,0,5,31,Furnished,1,1,0,0.45,8.38,13.46
+PROP-046535,Jaipur,Affordable,Apartment,5,5,658.71,511.23,8,22,39,Unfurnished,1,1,1,3.49,13.7,7.67
+PROP-034563,Jaipur,Mid-Range,Villa,1,2,1501.27,991.07,11,41,27,Unfurnished,1,1,0,5.15,7.4,77.85
+PROP-096055,Jaipur,Premium,Builder Floor,1,1,2120.55,1546.39,29,35,37,Unfurnished,1,1,0,4.32,7.79,79.96
+PROP-053952,Jaipur,Premium,Apartment,5,5,2216.76,1720.77,4,16,25,Unfurnished,0,1,1,1.46,9.94,61.1
+PROP-044883,Jaipur,Affordable,Villa,2,2,579.29,427.99,1,18,11,Semi-Furnished,1,1,1,2.37,4.27,19.64
+PROP-098342,Jaipur,Premium,Apartment,6,6,2168.18,1778.14,9,12,20,Unfurnished,1,1,0,5.85,11.34,89.98
+PROP-093905,Jaipur,Affordable,Apartment,4,4,662.15,432.07,2,5,9,Furnished,1,1,1,2.93,17.59,12.68
+PROP-057911,Jaipur,Mid-Range,Independent House,5,5,655.1,497.7,1,2,9,Furnished,0,1,0,3.3,8.43,36.18
+PROP-005855,Kolkata,Mid-Range,Villa,2,2,1918.07,1384.4,11,14,1,Semi-Furnished,1,1,1,3.65,5.02,162.99
+PROP-012929,Kolkata,Mid-Range,Independent House,3,4,1372.31,992.56,33,38,29,Unfurnished,0,1,1,1.87,7.01,76.31
+PROP-034527,Kolkata,Affordable,Builder Floor,1,2,1028.74,798.62,8,16,34,Semi-Furnished,1,1,1,2.14,6.46,30.58
+PROP-066281,Kolkata,Affordable,Independent House,5,6,293.68,219.41,1,19,37,Semi-Furnished,1,1,0,4.69,7.94,9.93
+PROP-095766,Kolkata,Premium,Independent House,3,4,1639.48,1142.83,14,33,31,Unfurnished,1,1,1,4.41,9.56,105.5
+PROP-030311,Kolkata,Mid-Range,Builder Floor,5,6,1350.24,908.7,3,16,11,Furnished,1,1,0,3.36,11.44,104.02
+PROP-041319,Kolkata,Mid-Range,Apartment,2,3,1841.48,1252.38,3,32,36,Furnished,1,1,0,3.08,8.33,59.41
+PROP-077314,Kolkata,Premium,Independent House,1,1,1982.79,1463.79,1,2,23,Unfurnished,0,1,0,1.89,2.0,272.56
+PROP-087136,Kolkata,Mid-Range,Independent House,2,3,1262.42,945.48,4,9,14,Unfurnished,1,1,1,3.51,9.19,68.95
+PROP-045343,Kolkata,Premium,Builder Floor,3,3,1551.68,1221.63,3,41,10,Unfurnished,1,1,1,4.94,9.58,149.26
+PROP-013325,Kolkata,Affordable,Apartment,5,6,882.06,590.54,13,20,39,Furnished,1,1,0,5.71,11.15,37.6
+PROP-033151,Kolkata,Affordable,Independent House,1,1,1245.09,982.04,2,35,7,Semi-Furnished,1,1,0,3.38,7.94,73.56
+PROP-013966,Kolkata,Mid-Range,Independent House,2,3,1770.87,1406.75,15,29,29,Unfurnished,1,1,0,0.16,1.02,90.23
+PROP-036277,Kolkata,Premium,Villa,6,6,2489.0,1838.99,3,36,10,Unfurnished,1,1,1,3.26,7.07,186.21
+PROP-063133,Kolkata,Premium,Apartment,6,6,2093.83,1494.27,4,6,24,Furnished,0,1,1,5.16,5.68,278.08
+PROP-083391,Kolkata,Premium,Builder Floor,1,1,2672.23,1894.1,0,31,30,Unfurnished,1,1,1,2.61,8.86,189.8
+PROP-032768,Kolkata,Affordable,Villa,4,5,778.14,558.64,5,20,14,Semi-Furnished,0,1,0,6.88,11.83,32.17
+PROP-029303,Kolkata,Premium,Independent House,6,6,2796.08,2171.94,10,15,19,Unfurnished,0,1,0,4.93,11.19,252.09
+PROP-016581,Kolkata,Premium,Independent House,2,2,2807.34,2036.61,8,36,18,Semi-Furnished,1,1,0,4.29,6.08,290.45
+PROP-047703,Kolkata,Mid-Range,Builder Floor,3,4,1714.0,1435.0,4,31,32,Semi-Furnished,1,1,0,0.01,8.37,115.73
+PROP-076074,Kolkata,Premium,Builder Floor,1,2,2444.01,1927.88,4,5,35,Furnished,1,1,1,3.58,9.26,200.83
+PROP-064063,Kolkata,Mid-Range,Builder Floor,2,3,1019.29,686.97,0,3,10,Semi-Furnished,0,0,1,2.28,14.59,52.22
+PROP-073806,Kolkata,Premium,Builder Floor,4,4,3018.34,2050.74,6,9,26,Semi-Furnished,1,1,1,2.63,4.64,302.45
+PROP-053089,Kolkata,Mid-Range,Independent House,1,2,863.56,595.62,2,8,1,Unfurnished,1,1,1,4.9,10.12,65.41
+PROP-098567,Kolkata,Premium,Builder Floor,3,4,3120.79,2268.36,32,36,5,Unfurnished,1,1,1,2.48,8.77,360.54
+PROP-071361,Kolkata,Mid-Range,Apartment,2,3,800.1,564.62,0,11,14,Furnished,0,1,1,1.02,4.59,62.58
+PROP-052602,Kolkata,Mid-Range,Builder Floor,2,2,684.83,561.69,28,44,26,Unfurnished,0,1,1,3.0,5.41,34.81
+PROP-072615,Kolkata,Affordable,Builder Floor,6,6,912.17,769.49,11,20,24,Semi-Furnished,0,1,0,6.64,1.62,51.69
+PROP-007959,Kolkata,Premium,Villa,2,2,1456.53,1090.85,12,30,27,Furnished,1,1,1,1.61,17.27,68.64
+PROP-039839,Kolkata,Affordable,Independent House,4,4,970.67,760.42,6,18,22,Furnished,0,1,0,5.4,6.81,54.78
+PROP-003361,Kolkata,Mid-Range,Independent House,3,4,1526.46,1258.58,0,9,25,Unfurnished,1,1,1,4.96,10.52,67.26
+PROP-059613,Kolkata,Premium,Apartment,5,5,2314.29,1863.31,18,43,39,Semi-Furnished,0,1,1,3.46,12.33,172.6
+PROP-092513,Kolkata,Affordable,Apartment,2,3,1067.13,790.06,5,40,8,Unfurnished,0,1,0,5.48,9.64,56.87
+PROP-092229,Kolkata,Affordable,Builder Floor,1,2,993.89,743.1,15,29,23,Unfurnished,1,1,0,5.17,1.58,71.78
+PROP-087093,Kolkata,Mid-Range,Apartment,3,4,1129.64,881.87,1,38,21,Unfurnished,1,1,0,1.87,16.25,37.24
+PROP-018130,Kolkata,Mid-Range,Villa,2,3,1192.87,882.44,18,20,10,Furnished,1,1,0,1.8,10.45,68.99
+PROP-044458,Kolkata,Premium,Villa,2,2,2109.1,1596.68,29,38,15,Semi-Furnished,1,1,0,0.75,9.65,153.12
+PROP-089481,Kolkata,Mid-Range,Apartment,1,2,1470.48,1097.35,25,27,31,Furnished,1,1,0,4.28,8.03,97.51
+PROP-087253,Kolkata,Mid-Range,Independent House,4,5,1765.69,1325.71,10,17,20,Unfurnished,0,1,0,2.17,8.23,91.28
+PROP-091422,Kolkata,Premium,Independent House,3,4,2100.58,1749.44,0,5,6,Unfurnished,1,1,0,0.21,7.7,316.12
+PROP-002269,Kolkata,Premium,Villa,2,2,2516.73,1815.76,36,40,9,Furnished,0,1,0,1.04,13.32,235.06
+PROP-085749,Kolkata,Mid-Range,Apartment,3,3,1270.3,891.19,29,42,29,Furnished,1,1,1,1.18,7.69,61.37
+PROP-067604,Kolkata,Premium,Builder Floor,1,2,1776.59,1293.95,2,4,31,Semi-Furnished,0,1,0,0.47,8.1,150.94
+PROP-008148,Kolkata,Mid-Range,Builder Floor,3,3,1627.55,1359.64,15,25,32,Unfurnished,1,1,0,6.66,6.72,73.49
+PROP-038316,Kolkata,Mid-Range,Independent House,3,4,989.32,783.21,27,39,37,Unfurnished,1,1,0,1.78,13.73,57.68
+PROP-085000,Kolkata,Affordable,Independent House,4,5,850.53,715.15,14,28,2,Furnished,1,1,1,3.81,8.58,53.19
+PROP-064233,Kolkata,Premium,Villa,2,2,2089.39,1670.36,13,27,29,Furnished,1,1,0,5.27,5.92,148.72
+PROP-079043,Kolkata,Mid-Range,Villa,1,2,1026.04,838.58,29,44,6,Unfurnished,1,1,1,2.85,6.64,125.75815878593458
+PROP-023745,Kolkata,Mid-Range,Villa,3,3,1596.75,1166.17,24,29,36,Furnished,0,1,1,3.26,5.56,90.55
+PROP-000073,Kolkata,Mid-Range,Apartment,3,3,1715.16,1253.57,1,2,0,Furnished,0,0,0,3.51,2.9,112.46
+PROP-024002,Mumbai,Mid-Range,Independent House,1,1,1627.11,1317.16,0,3,34,Furnished,1,0,0,3.07,13.26,220.81
+PROP-040435,Mumbai,Mid-Range,Builder Floor,5,6,1405.65,1175.87,4,17,26,Unfurnished,0,1,1,1.26,6.91,157.59
+PROP-064612,Mumbai,Affordable,Apartment,2,3,923.83,630.73,18,34,21,Semi-Furnished,1,1,1,4.28,5.01,134.43
+PROP-046412,Mumbai,Affordable,Builder Floor,3,4,900.72,725.63,10,29,15,Semi-Furnished,1,1,1,4.78,15.97,91.32
+PROP-053779,Mumbai,Affordable,Independent House,1,1,811.77,674.25,17,18,15,Unfurnished,1,1,0,4.45,10.76,128.89
+PROP-032242,Mumbai,Premium,Builder Floor,2,3,1962.33,1559.52,12,30,22,Unfurnished,1,1,0,2.19,7.66,524.52
+PROP-054718,Mumbai,Mid-Range,Independent House,3,3,1153.66,902.9,1,4,34,Unfurnished,0,1,1,1.4,12.48,172.71
+PROP-080641,Mumbai,Mid-Range,Apartment,3,4,1161.07,808.23,7,13,1,Furnished,1,1,0,0.61,8.87,211.26
+PROP-090312,Mumbai,Premium,Villa,3,4,2348.11,1904.88,2,11,21,Semi-Furnished,1,1,0,0.34,12.58,497.01
+PROP-021296,Mumbai,Mid-Range,Independent House,2,3,2238.48,1470.75,0,1,14,Furnished,1,1,1,2.41,13.44,376.9
+PROP-005357,Mumbai,Mid-Range,Independent House,1,1,1241.65,834.62,3,16,24,Unfurnished,1,1,0,1.64,5.85,212.98
+PROP-093902,Mumbai,Premium,Apartment,2,2,2671.76,1808.89,10,40,29,Unfurnished,0,1,0,2.56,7.82,641.13
+PROP-041516,Mumbai,Affordable,Builder Floor,4,4,1012.55,857.7,4,21,25,Unfurnished,1,1,0,5.29,10.47,94.53
+PROP-049424,Mumbai,Mid-Range,Builder Floor,2,2,1717.68,1338.3,0,11,15,Unfurnished,1,1,0,1.13,7.86,399.09
+PROP-087602,Mumbai,Affordable,Apartment,1,2,678.19,450.97,8,9,13,Semi-Furnished,0,1,1,0.22,5.86,106.44
+PROP-092756,Mumbai,Mid-Range,Villa,3,4,332.67,232.86,0,21,35,Unfurnished,1,1,0,2.22,6.88,43.97
+PROP-018407,Mumbai,Premium,Independent House,2,2,2100.09,1691.73,10,13,24,Semi-Furnished,0,1,0,2.07,2.39,597.91
+PROP-071380,Mumbai,Mid-Range,Villa,2,3,1103.83,868.94,6,17,24,Semi-Furnished,1,1,1,3.09,11.62,236.7
+PROP-044863,Mumbai,Mid-Range,Apartment,3,4,1420.61,1166.95,1,11,39,Semi-Furnished,1,1,1,1.8,9.4,205.28
+PROP-097033,Mumbai,Premium,Builder Floor,3,3,2205.14,1472.0,2,3,37,Semi-Furnished,0,0,1,3.15,1.34,567.3
+PROP-092313,Mumbai,Mid-Range,Builder Floor,6,6,1577.8,1217.5,22,38,6,Furnished,1,1,0,1.24,15.97,248.8
+PROP-086805,Mumbai,Mid-Range,Builder Floor,2,3,1287.43,842.37,20,22,10,Unfurnished,1,1,0,3.84,13.08,100.83558144448492
+PROP-040004,Mumbai,Mid-Range,Builder Floor,3,4,1136.88,820.03,1,2,7,Unfurnished,1,0,0,2.49,5.15,362.15
+PROP-088886,Mumbai,Mid-Range,Villa,5,6,614.82,432.79,13,25,15,Semi-Furnished,1,1,0,4.88,8.95,122.93
+PROP-028609,Mumbai,Mid-Range,Builder Floor,2,2,1534.99,1095.74,12,17,30,Furnished,1,1,0,2.97,10.29,179.11
+PROP-003137,Mumbai,Premium,Independent House,2,2,2072.3,1347.41,5,35,39,Semi-Furnished,1,1,0,3.15,7.95,527.09
+PROP-064887,Mumbai,Premium,Builder Floor,2,2,208.05,172.18,5,40,5,Furnished,0,1,1,6.79,5.29,89.89
+PROP-092910,Mumbai,Affordable,Independent House,2,2,1117.85,760.4,37,38,16,Semi-Furnished,0,1,0,2.37,10.43,136.85
+PROP-022773,Mumbai,Mid-Range,Independent House,1,1,1302.73,862.77,5,23,8,Unfurnished,1,1,1,0.71,8.73,202.42
+PROP-073854,Mumbai,Premium,Villa,3,3,2652.28,1779.58,14,43,24,Unfurnished,1,1,1,3.86,10.78,775.15
+PROP-022225,Mumbai,Mid-Range,Apartment,4,4,856.51,687.7,23,26,2,Unfurnished,1,1,1,2.36,13.44,126.98
+PROP-034571,Mumbai,Affordable,Builder Floor,3,3,546.37,405.68,27,44,38,Furnished,1,1,0,3.03,7.02,77.34
+PROP-090894,Mumbai,Mid-Range,Independent House,3,3,1592.83,1277.28,2,5,3,Unfurnished,1,1,1,1.24,14.27,233.21
+PROP-073675,Mumbai,Mid-Range,Builder Floor,1,1,657.01,526.31,2,7,12,Unfurnished,0,1,0,3.29,10.97,119.55
+PROP-085195,Mumbai,Premium,Apartment,1,2,1891.17,1371.85,14,35,13,Semi-Furnished,1,1,0,4.25,10.34,541.27
+PROP-076046,Mumbai,Affordable,Apartment,1,1,748.87,600.85,7,12,32,Furnished,1,1,0,0.53,5.45,81.33
+PROP-080992,Mumbai,Affordable,Independent House,2,2,873.73,740.76,32,35,37,Furnished,1,1,1,5.18,8.86,105.53
+PROP-021727,Mumbai,Affordable,Apartment,2,3,743.19,597.42,0,3,10,Furnished,1,0,1,0.74,3.26,106.79
+PROP-003192,Mumbai,Mid-Range,Independent House,3,3,1654.09,1302.97,0,1,5,Unfurnished,1,0,1,4.57,6.4,428.12
+PROP-076552,Mumbai,Mid-Range,Independent House,2,2,1207.81,868.67,14,35,7,Unfurnished,0,1,1,2.34,6.18,263.81
+PROP-011283,Mumbai,Affordable,Apartment,5,5,672.0,570.63,18,20,7,Unfurnished,1,1,0,1.83,14.46,65.24
+PROP-045981,Mumbai,Mid-Range,Builder Floor,4,4,1117.86,937.77,5,16,21,Unfurnished,1,1,1,3.46,10.59,162.99
+PROP-045367,Mumbai,Mid-Range,Apartment,2,3,1330.46,1045.83,9,13,17,Unfurnished,0,1,0,3.76,16.35,310.96
+PROP-069317,Mumbai,Premium,Apartment,3,4,2009.41,1608.95,4,7,21,Semi-Furnished,1,1,0,3.32,13.27,671.42
+PROP-016987,Mumbai,Affordable,Builder Floor,1,1,1136.5,795.4,0,9,32,Semi-Furnished,0,1,1,5.97,11.54,157.25
+PROP-064164,Mumbai,Premium,Builder Floor,1,2,1282.03,887.52,11,28,31,Unfurnished,1,1,0,4.36,4.47,402.78
+PROP-009053,Mumbai,Mid-Range,Apartment,3,4,1449.11,1037.05,8,20,8,Semi-Furnished,0,1,1,2.79,9.23,230.51
+PROP-062832,Mumbai,Mid-Range,Apartment,4,4,537.7,418.77,4,10,10,Semi-Furnished,1,1,0,2.83,16.45,71.66
+PROP-013723,Mumbai,Affordable,Independent House,3,4,949.29,685.01,13,21,33,Furnished,0,1,0,1.16,8.3,134.93
+PROP-019595,Mumbai,Premium,Builder Floor,4,4,1723.37,1301.54,8,43,7,Furnished,0,1,1,0.6,16.13,325.87
+PROP-075165,Pune,Premium,Villa,3,4,2087.58,1482.66,1,10,6,Unfurnished,1,1,0,3.16,1.38,215.87
+PROP-078207,Pune,Mid-Range,Independent House,2,3,1367.9,1154.06,13,15,27,Semi-Furnished,0,1,1,4.88,7.42,113.53
+PROP-020508,Pune,Mid-Range,Apartment,3,4,1211.99,1025.45,24,35,38,Furnished,0,1,0,4.12,6.21,67.28
+PROP-061293,Pune,Mid-Range,Builder Floor,1,2,1366.56,930.84,6,11,28,Semi-Furnished,0,1,1,9.46,6.26,87.8
+PROP-048636,Pune,Mid-Range,Apartment,6,6,1360.62,977.24,1,13,35,Furnished,1,1,0,1.49,6.85,92.05
+PROP-026011,Pune,Mid-Range,Villa,3,4,1298.65,1073.36,7,24,39,Semi-Furnished,1,1,0,2.28,4.61,81.07
+PROP-095910,Pune,Affordable,Builder Floor,2,3,627.94,496.95,10,28,2,Unfurnished,0,1,1,5.6,14.13,26.161087328599727
+PROP-023348,Pune,Mid-Range,Independent House,3,4,1194.61,1007.77,6,13,7,Semi-Furnished,1,1,0,2.87,11.71,68.56
+PROP-090511,Pune,Premium,Independent House,2,2,1252.24,883.54,0,1,28,Semi-Furnished,0,0,1,0.9,7.91,146.86
+PROP-073608,Pune,Affordable,Builder Floor,2,3,910.98,645.16,6,9,34,Semi-Furnished,0,1,1,2.7,1.96,58.12
+PROP-057617,Pune,Premium,Builder Floor,2,2,2840.35,1924.1,0,14,5,Semi-Furnished,1,1,1,1.21,16.03,352.99
+PROP-072244,Pune,Mid-Range,Apartment,5,6,1678.03,1283.11,3,22,10,Unfurnished,1,1,0,1.42,9.84,187.17
+PROP-008905,Pune,Premium,Independent House,2,2,1971.71,1422.7,1,5,3,Unfurnished,1,1,1,5.62,2.86,304.17
+PROP-001795,Pune,Affordable,Independent House,4,4,220.69,184.49,17,30,7,Semi-Furnished,1,1,1,3.62,7.52,19.41
+PROP-088763,Pune,Mid-Range,Apartment,5,5,495.21,380.43,13,19,1,Unfurnished,1,1,1,1.57,9.04,48.5
+PROP-002268,Pune,Premium,Apartment,2,3,2545.31,2094.27,24,29,11,Furnished,1,1,1,4.0,7.26,253.91
+PROP-056153,Pune,Mid-Range,Apartment,2,3,1665.13,1206.02,0,38,11,Furnished,0,1,0,5.52,8.62,176.88
+PROP-021164,Pune,Mid-Range,Villa,1,1,1013.03,854.57,4,5,0,Unfurnished,1,1,1,0.88,4.67,87.39
+PROP-018336,Pune,Mid-Range,Apartment,1,2,1246.84,993.04,12,14,1,Semi-Furnished,0,1,1,0.33,2.54,80.88
+PROP-046119,Pune,Mid-Range,Independent House,3,4,1321.58,886.6,17,22,26,Unfurnished,1,1,1,2.58,0.71,161.04
+PROP-048437,Pune,Mid-Range,Builder Floor,3,3,1137.16,877.44,29,38,2,Semi-Furnished,1,1,1,4.76,10.54,101.93
+PROP-034818,Pune,Premium,Builder Floor,2,2,2471.88,1876.19,0,1,37,Unfurnished,0,0,1,0.49,4.11,296.72
+PROP-082694,Pune,Affordable,Independent House,6,6,1096.28,725.69,20,23,14,Unfurnished,1,1,0,3.24,3.0,87.57
+PROP-058048,Pune,Mid-Range,Villa,3,3,714.56,537.38,8,10,1,Furnished,0,1,0,1.0,8.62,59.04
+PROP-024166,Pune,Premium,Builder Floor,3,3,2461.86,1929.45,14,24,11,Semi-Furnished,0,1,1,7.14,11.47,367.56
+PROP-026904,Pune,Mid-Range,Villa,4,5,1388.03,1115.97,25,40,4,Semi-Furnished,1,1,1,4.25,8.82,111.75
+PROP-018813,Pune,Affordable,Builder Floor,5,6,1110.31,807.39,15,39,3,Furnished,1,1,0,4.25,13.21,69.83
+PROP-080982,Pune,Mid-Range,Independent House,3,4,824.66,677.66,0,5,38,Furnished,1,1,1,3.75,4.8,46.93
+PROP-095600,Pune,Premium,Builder Floor,2,3,1784.05,1395.98,6,32,20,Semi-Furnished,0,1,1,4.96,5.11,293.01
+PROP-070431,Pune,Mid-Range,Builder Floor,1,2,916.7,747.0,19,20,12,Semi-Furnished,0,1,0,1.68,8.16,53.63
+PROP-029186,Pune,Mid-Range,Villa,2,2,1327.74,1032.49,13,14,0,Semi-Furnished,1,1,1,5.09,7.69,160.97
+PROP-063359,Pune,Mid-Range,Builder Floor,3,4,1048.82,826.38,9,17,23,Unfurnished,1,1,0,4.92,4.07,141.97
+PROP-020133,Pune,Mid-Range,Apartment,3,4,1060.89,711.91,3,14,4,Semi-Furnished,1,1,1,1.61,4.11,102.18
+PROP-096749,Pune,Mid-Range,Villa,3,3,1104.82,830.65,17,19,27,Semi-Furnished,0,1,0,1.88,10.1,75.99
+PROP-009443,Pune,Mid-Range,Apartment,4,5,1008.12,663.49,13,22,6,Unfurnished,1,1,1,3.94,10.11,119.38
+PROP-045130,Pune,Premium,Independent House,2,2,2887.94,1899.57,14,18,6,Semi-Furnished,0,1,0,2.03,8.33,1497.899955397118
+PROP-093505,Pune,Affordable,Independent House,2,2,1253.08,932.9,13,29,14,Furnished,0,1,1,1.14,10.4,68.39
+PROP-003032,Pune,Mid-Range,Builder Floor,3,4,813.44,617.14,13,32,36,Semi-Furnished,1,1,0,1.75,9.69,51.94
+PROP-012385,Pune,Mid-Range,Builder Floor,3,4,807.57,552.28,24,38,33,Unfurnished,0,1,1,2.84,6.39,47.91
+PROP-064900,Pune,Premium,Builder Floor,2,3,2057.18,1727.51,28,34,1,Furnished,1,1,0,2.47,13.87,268.89
+PROP-087478,Pune,Mid-Range,Apartment,2,2,974.57,691.34,18,22,27,Furnished,1,1,0,1.35,5.66,92.28
+PROP-047089,Pune,Premium,Independent House,4,5,1056.61,809.96,3,33,22,Unfurnished,0,1,1,3.22,2.23,107.17
+PROP-088560,Pune,Affordable,Independent House,2,3,1319.87,914.97,0,4,31,Semi-Furnished,0,1,1,1.59,9.52,67.4
+PROP-012286,Pune,Affordable,Builder Floor,2,3,627.55,426.72,32,42,3,Unfurnished,1,1,1,5.45,10.79,33.82
+PROP-042767,Pune,Mid-Range,Villa,2,3,742.82,526.31,1,36,33,Unfurnished,1,1,1,0.39,9.8,64.65
+PROP-049620,Pune,Premium,Builder Floor,3,4,1496.04,1071.24,2,33,17,Semi-Furnished,1,1,0,0.35,7.3,153.42
+PROP-083745,Pune,Affordable,Apartment,1,2,1049.37,880.03,5,6,12,Unfurnished,1,1,1,3.84,10.13,77.55
+PROP-085365,Pune,Mid-Range,Apartment,1,1,1942.77,1639.87,2,9,33,Furnished,0,1,1,4.01,9.83,138.07
+PROP-057319,Pune,Premium,Builder Floor,1,2,3365.19,2291.7,0,1,12,Furnished,0,0,1,3.07,5.13,293.53
+PROP-011662,Pune,Mid-Range,Apartment,1,1,1489.85,1060.3,4,9,27,Furnished,1,1,1,0.37,5.51,166.84
