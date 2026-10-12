@@ -77,19 +77,19 @@ def generate_intelligence_report(row: pd.Series, predicted_price: float, model_r
     price_per_sqft_super = (predicted_price * 100000) / super_area if super_area > 0 else 0
     price_per_sqft_carpet = (predicted_price * 100000) / carpet_area if carpet_area > 0 else 0
 
-    # Valuation Assessment Tier
+    # Valuation Assessment Tier (Objective physical specification classification)
     if valuation_score >= 80:
-        tier = "Prime Investment Asset"
-        summary = "Highly attractive property with premium locality, strong transit proximity, and modern amenities."
+        tier = "Premium Specification Tier"
+        summary = "High-specification residential property characterized by prime locality tier, close rapid-transit access, and modern structural amenities."
     elif valuation_score >= 65:
-        tier = "Strong Market Value"
-        summary = "Well-positioned property matching market standards with solid fundamentals."
+        tier = "Above Average Specification"
+        summary = "Well-specified residential property aligning with standard metropolitan benchmarks and solid physical fundamentals."
     elif valuation_score >= 50:
-        tier = "Standard Value Asset"
-        summary = "Average market listing. Standard feature set with moderate accessibility."
+        tier = "Standard Specification Tier"
+        summary = "Standard residential property with typical structural features and moderate urban accessibility."
     else:
-        tier = "Value / Discount Tier"
-        summary = "Older property or further from transit/city center, reflected in accessible valuation."
+        tier = "Accessible / Basic Tier"
+        summary = "Older property vintage or greater transit distance, reflected in an accessible baseline valuation."
 
     # Identify Key Value Drivers
     drivers = []

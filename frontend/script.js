@@ -129,30 +129,41 @@ async function loadOverviewMetrics() {
         const data = await response.json();
         appState.overviewMetrics = data;
 
-        document.getElementById('kpi-props').textContent = `${data.properties_analyzed.toLocaleString()}`;
-        document.getElementById('kpi-cities').textContent = `${data.cities_covered} Cities`;
-        document.getElementById('kpi-avg-price').textContent = `₹ ${data.average_price_lakhs.toFixed(2)} L`;
-        document.getElementById('kpi-med-price').textContent = `₹ ${data.median_price_lakhs.toFixed(2)} L`;
-        document.getElementById('kpi-r2').textContent = data.model_r2.toFixed(4);
-        document.getElementById('kpi-mae').textContent = `₹ ${data.model_mae_lakhs.toFixed(2)} L`;
+        const kpiProps = document.getElementById('kpi-props');
+        if (kpiProps) kpiProps.textContent = `${data.properties_analyzed.toLocaleString()}`;
 
-        if (data.top_city_by_median) {
-            document.getElementById('snap-top-city').textContent = `${data.top_city_by_median.city} (₹ ${data.top_city_by_median.median_price_lakhs.toFixed(2)} L)`;
+        const kpiCities = document.getElementById('kpi-cities');
+        if (kpiCities) kpiCities.textContent = `${data.cities_covered} Cities`;
+
+        const kpiAvg = document.getElementById('kpi-avg-price');
+        if (kpiAvg) kpiAvg.textContent = `₹ ${data.average_price_lakhs.toFixed(2)} L`;
+
+        const kpiMed = document.getElementById('kpi-med-price');
+        if (kpiMed) kpiMed.textContent = `₹ ${data.median_price_lakhs.toFixed(2)} L`;
+
+        const kpiR2 = document.getElementById('kpi-r2');
+        if (kpiR2) kpiR2.textContent = data.model_r2.toFixed(4);
+
+        const kpiMae = document.getElementById('kpi-mae');
+        if (kpiMae) kpiMae.textContent = `₹ ${data.model_mae_lakhs.toFixed(2)} L`;
+
+        const snapCity = document.getElementById('snap-top-city');
+        if (snapCity && data.top_city_by_median) {
+            snapCity.textContent = `${data.top_city_by_median.city} (₹ ${data.top_city_by_median.median_price_lakhs.toFixed(2)} L)`;
         }
 
-        if (data.most_important_feature) {
-            document.getElementById('snap-top-feat').textContent = `${data.most_important_feature.feature} (${data.most_important_feature.importance_percentage}%)`;
+        const snapFeat = document.getElementById('snap-top-feat');
+        if (snapFeat && data.most_important_feature) {
+            snapFeat.textContent = `${data.most_important_feature.feature} (${data.most_important_feature.importance_percentage}%)`;
         }
 
-        document.getElementById('sys-model-name').textContent = data.model_name;
-        document.getElementById('sys-model-status').textContent = `● ${data.model_status}`;
-        document.getElementById('sys-dataset-status').textContent = data.dataset_status;
-        document.getElementById('sys-api-status').textContent = `● ${data.api_status}`;
-        document.getElementById('sidebar-status-text').textContent = 'AI System Online';
+        const sidebarStatus = document.getElementById('sidebar-status-text');
+        if (sidebarStatus) sidebarStatus.textContent = 'System Online';
 
     } catch (err) {
         console.warn('Overview metrics warning:', err);
-        document.getElementById('sidebar-status-text').textContent = 'API Reconnecting...';
+        const sidebarStatus = document.getElementById('sidebar-status-text');
+        if (sidebarStatus) sidebarStatus.textContent = 'Offline';
     }
 }
 
@@ -232,7 +243,7 @@ function initValuationForm() {
         e.preventDefault();
 
         const btn = document.getElementById('analyze-btn');
-        btn.textContent = '⏳ Evaluating Model Pipeline...';
+        btn.textContent = '⏳ Predicting Property Value...';
         btn.disabled = true;
 
         try {
@@ -240,34 +251,69 @@ function initValuationForm() {
             const carpetArea = parseFloat(document.getElementById('carpet_area').value);
             const floorNumber = parseInt(document.getElementById('floor_number').value, 10);
             const totalFloors = parseInt(document.getElementById('total_floors').value, 10);
+            const bhk = parseInt(document.getElementById('bhk').value, 10);
+            const bathrooms = parseInt(document.getElementById('bathrooms').value, 10);
+            const age = parseInt(document.getElementById('age').value, 10);
+            const city = document.getElementById('city').value;
+            const localityType = document.getElementById('locality_type').value;
+            const propertyType = document.getElementById('property_type').value;
+            const furnishingStatus = document.getElementById('furnishing_status').value;
 
-            // Client-Side Business Logic Validation
+            // Strict Client-Side Input Validation
+            if (!city || !localityType || !propertyType || !furnishingStatus) {
+                showToast('⚠️ Please select all required categorical property options.');
+                btn.textContent = '⚡ PREDICT PROPERTY VALUE';
+                btn.disabled = false;
+                return;
+            }
+
+            if (isNaN(superArea) || superArea <= 0) {
+                showToast('⚠️ Please enter a valid Super Built-up Area.');
+                btn.textContent = '⚡ PREDICT PROPERTY VALUE';
+                btn.disabled = false;
+                return;
+            }
+
+            if (isNaN(carpetArea) || carpetArea <= 0) {
+                showToast('⚠️ Please enter a valid Carpet Area.');
+                btn.textContent = '⚡ PREDICT PROPERTY VALUE';
+                btn.disabled = false;
+                return;
+            }
+
             if (carpetArea > superArea) {
                 showToast('⚠️ Carpet Area cannot exceed Super Built-up Area.');
-                btn.textContent = '⚡ ESTIMATE PROPERTY VALUE';
+                btn.textContent = '⚡ PREDICT PROPERTY VALUE';
                 btn.disabled = false;
                 return;
             }
 
             if (floorNumber > totalFloors) {
                 showToast('⚠️ Floor Number cannot exceed Total Floors in building.');
-                btn.textContent = '⚡ ESTIMATE PROPERTY VALUE';
+                btn.textContent = '⚡ PREDICT PROPERTY VALUE';
+                btn.disabled = false;
+                return;
+            }
+
+            if (floorNumber < 0 || totalFloors < 1 || age < 0 || bhk < 1 || bathrooms < 1) {
+                showToast('⚠️ Please ensure floor, age, and room counts are positive valid numbers.');
+                btn.textContent = '⚡ PREDICT PROPERTY VALUE';
                 btn.disabled = false;
                 return;
             }
 
             const propertyData = {
-                City: document.getElementById('city').value,
-                Locality_Type: document.getElementById('locality_type').value,
-                Property_Type: document.getElementById('property_type').value,
-                Furnishing_Status: document.getElementById('furnishing_status').value,
+                City: city,
+                Locality_Type: localityType,
+                Property_Type: propertyType,
+                Furnishing_Status: furnishingStatus,
                 Super_Area_SqFt: superArea,
                 Carpet_Area_SqFt: carpetArea,
-                BHK: parseInt(document.getElementById('bhk').value, 10),
-                Bathrooms: parseInt(document.getElementById('bathrooms').value, 10),
+                BHK: bhk,
+                Bathrooms: bathrooms,
                 Floor_Number: floorNumber,
                 Total_Floors: totalFloors,
-                Age_of_Property: parseInt(document.getElementById('age').value, 10),
+                Age_of_Property: age,
                 Parking: document.getElementById('parking').checked ? 1 : 0,
                 Lift_Available: document.getElementById('lift').checked ? 1 : 0,
                 Gated_Community: document.getElementById('gated').checked ? 1 : 0,
@@ -284,7 +330,7 @@ function initValuationForm() {
 
             if (!predResponse.ok) {
                 const errJson = await predResponse.json();
-                throw new Error(errJson.detail || 'Prediction failed');
+                throw new Error(errJson.detail || 'Prediction request failed on backend.');
             }
 
             const predResult = await predResponse.json();
@@ -317,16 +363,16 @@ function initValuationForm() {
             // Render All Views
             renderAllViews();
 
-            showToast('✅ Property valuation and intelligence generated!');
+            showToast('✅ Property valuation generated successfully!');
 
             // Automatically Navigate to Prediction Result
             navigateTo('page-result');
 
         } catch (err) {
-            showToast(`API Error: ${err.message}`);
+            showToast(`⚠️ API Error: ${err.message}`);
             console.error('Valuation error:', err);
         } finally {
-            btn.textContent = '⚡ ESTIMATE PROPERTY VALUE';
+            btn.textContent = '⚡ PREDICT PROPERTY VALUE';
             btn.disabled = false;
         }
     });
@@ -485,11 +531,21 @@ function renderOverviewRecentValuation(pred) {
 
     if (!pred || !appState.propertyInput) {
         container.innerHTML = `
-            <div class="empty-state-card" style="margin: 10px 0; padding: 24px;">
-                <div class="empty-icon" style="font-size: 1.8rem; margin-bottom: 8px;">🏠</div>
-                <h4 style="font-size: 0.95rem; font-weight: 700; color: #0F172A; margin-bottom: 4px;">No Active Property Valuation</h4>
-                <p style="font-size: 0.82rem; color: #64748B; margin-bottom: 14px;">Configure property spatial and transit attributes to generate a valuation.</p>
-                <button class="btn btn-primary" onclick="navigateTo('page-valuation')">⚡ Start Property Valuation</button>
+            <div class="recent-val-init-card">
+                <div class="recent-val-stat-row">
+                    <div>
+                        <span class="recent-val-sublabel">Latest Valuation</span>
+                        <div class="recent-val-number" id="overview-recent-val-num">₹ 0.00 Lakhs</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <span class="recent-val-sublabel">Specification Score</span>
+                        <div class="recent-val-score" id="overview-recent-val-score">0/100</div>
+                    </div>
+                </div>
+                <div class="recent-val-empty-msg" id="overview-recent-val-desc">
+                    No property valuation has been computed yet in this session. Configure and submit property parameters to run the trained model pipeline.
+                </div>
+                <button class="btn btn-primary btn-sm" onclick="navigateTo('page-valuation')" style="margin-top: 14px;">⚡ Run Property Valuation</button>
             </div>
         `;
         if (badge) badge.textContent = 'None';

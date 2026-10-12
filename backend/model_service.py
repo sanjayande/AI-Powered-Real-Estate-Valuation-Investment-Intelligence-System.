@@ -97,8 +97,8 @@ class ModelService:
 
     def get_overview_metrics(self) -> OverviewMetricsResponseSchema:
         metrics_tuned = self.raw_joblib.get('metrics_tuned', {})
-        r2_score = round(float(metrics_tuned.get('R2', 0.7772)), 4)
-        mae_score = round(float(metrics_tuned.get('MAE', 33.3051)), 2)
+        r2_score = round(float(metrics_tuned.get('R2', 0.0)), 4)
+        mae_score = round(float(metrics_tuned.get('MAE', 0.0)), 2)
 
         if not self.df.empty:
             total_props = int(len(self.df))
@@ -111,11 +111,11 @@ class ModelService:
             top_city_val = round(float(city_meds.iloc[0]), 2)
             top_city_data = {"city": top_city_name, "median_price_lakhs": top_city_val}
         else:
-            total_props = 80000
-            cities_count = 10
-            avg_price = 142.61
-            med_price = 96.60
-            top_city_data = {"city": "Mumbai", "median_price_lakhs": 232.54}
+            total_props = 0
+            cities_count = 0
+            avg_price = 0.0
+            med_price = 0.0
+            top_city_data = {"city": "N/A", "median_price_lakhs": 0.0}
 
         feat_imp_df = self.raw_joblib.get('feature_importances', None)
         if feat_imp_df is not None and not feat_imp_df.empty:
@@ -123,7 +123,7 @@ class ModelService:
             top_feat_val = round(float(feat_imp_df.iloc[0]['Importance']) * 100, 2)
             top_feature = {"feature": top_feat_name, "importance_percentage": top_feat_val}
         else:
-            top_feature = {"feature": "City_Mumbai", "importance_percentage": 24.36}
+            top_feature = {"feature": "N/A", "importance_percentage": 0.0}
 
         return OverviewMetricsResponseSchema(
             properties_analyzed=total_props,

@@ -65,41 +65,41 @@
                     </div>
                 </div>
 
-                <!-- Live Metrics Grid -->
+                <!-- Live Metrics Grid (Initialized to 0) -->
                 <div class="metrics-grid-6">
                     <div class="kpi-card">
                         <div class="kpi-label">Properties Analyzed</div>
-                        <div class="kpi-value" id="kpi-props">80,000</div>
+                        <div class="kpi-value" id="kpi-props">0</div>
                         <div class="kpi-meta">Verified Transaction Dataset</div>
                     </div>
                     <div class="kpi-card">
                         <div class="kpi-label">Metropolitan Coverage</div>
-                        <div class="kpi-value" id="kpi-cities">10 Cities</div>
+                        <div class="kpi-value" id="kpi-cities">0 Cities</div>
                         <div class="kpi-meta">Tier-1 & Tier-2 Metros</div>
                     </div>
                     <div class="kpi-card">
                         <div class="kpi-label">Average Property Price</div>
-                        <div class="kpi-value" id="kpi-avg-price">₹ 142.61 L</div>
+                        <div class="kpi-value" id="kpi-avg-price">₹ 0.00 L</div>
                         <div class="kpi-meta">Entire Dataset Mean</div>
                     </div>
                     <div class="kpi-card">
                         <div class="kpi-label">Median Property Price</div>
-                        <div class="kpi-value" id="kpi-med-price">₹ 96.60 L</div>
+                        <div class="kpi-value" id="kpi-med-price">₹ 0.00 L</div>
                         <div class="kpi-meta">50th Percentile Benchmark</div>
                     </div>
                     <div class="kpi-card highlight-card">
                         <div class="kpi-label">Model R² Accuracy</div>
-                        <div class="kpi-value" id="kpi-r2">0.7772</div>
+                        <div class="kpi-value" id="kpi-r2">0.0000</div>
                         <div class="kpi-meta">Tuned Gradient Boosting</div>
                     </div>
                     <div class="kpi-card">
                         <div class="kpi-label">Model Test MAE</div>
-                        <div class="kpi-value" id="kpi-mae">₹ 33.31 L</div>
+                        <div class="kpi-value" id="kpi-mae">₹ 0.00 L</div>
                         <div class="kpi-meta">Out-of-Sample Error</div>
                     </div>
                 </div>
 
-                <!-- Overview Main Content Columns -->
+                <!-- Overview Main Content Columns: Recent Valuation and Market Snapshot -->
                 <div class="dashboard-columns">
                     <!-- Left: Recent Valuation -->
                     <div class="dash-card">
@@ -108,55 +108,43 @@
                             <span class="badge badge-neutral" id="recent-val-badge">Current Session</span>
                         </div>
                         <div id="recent-valuation-container">
-                            <!-- Populated dynamically via JS -->
+                            <div class="recent-val-init-card">
+                                <div class="recent-val-stat-row">
+                                    <div>
+                                        <span class="recent-val-sublabel">Latest Valuation</span>
+                                        <div class="recent-val-number" id="overview-recent-val-num">₹ 0.00 Lakhs</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <span class="recent-val-sublabel">Specification Score</span>
+                                        <div class="recent-val-score" id="overview-recent-val-score">0/100</div>
+                                    </div>
+                                </div>
+                                <div class="recent-val-empty-msg" id="overview-recent-val-desc">
+                                    No property valuation has been computed yet in this session. Configure and submit property parameters to run the trained model pipeline.
+                                </div>
+                                <button class="btn btn-primary btn-sm" onclick="navigateTo('page-valuation')" style="margin-top: 14px;">⚡ Run Property Valuation</button>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Right: Market Snapshot & Model Status -->
-                    <div class="dash-stack">
-                        <div class="dash-card">
-                            <div class="card-header-row">
-                                <h2 class="card-title">Market Snapshot</h2>
-                                <span class="badge badge-blue">Verified Data</span>
-                            </div>
-                            <div class="snapshot-list">
-                                <div class="snapshot-row">
-                                    <span class="snap-key">Top City by Median Price:</span>
-                                    <strong class="snap-val" id="snap-top-city">Mumbai (₹ 232.54 L)</strong>
-                                </div>
-                                <div class="snapshot-row">
-                                    <span class="snap-key">Primary Valuation Driver:</span>
-                                    <strong class="snap-val" id="snap-top-feat">City Location / Super Built-up Area</strong>
-                                </div>
-                                <div class="snapshot-row">
-                                    <span class="snap-key">Current Property Market Position:</span>
-                                    <strong class="snap-val" id="snap-curr-pos">No active valuation</strong>
-                                </div>
-                            </div>
+                    <!-- Right: Market Snapshot -->
+                    <div class="dash-card">
+                        <div class="card-header-row">
+                            <h2 class="card-title">Market Snapshot</h2>
+                            <span class="badge badge-blue">Verified Data</span>
                         </div>
-
-                        <div class="dash-card">
-                            <div class="card-header-row">
-                                <h2 class="card-title">Model Status</h2>
-                                <span class="badge badge-green">Operational</span>
+                        <div class="snapshot-list">
+                            <div class="snapshot-row">
+                                <span class="snap-key">Top City by Median Price:</span>
+                                <strong class="snap-val" id="snap-top-city">--</strong>
                             </div>
-                            <div class="status-grid-2">
-                                <div class="status-item">
-                                    <span class="status-item-label">Model Engine</span>
-                                    <strong class="status-item-val" id="sys-model-name">GradientBoostingRegressor</strong>
-                                </div>
-                                <div class="status-item">
-                                    <span class="status-item-label">Model Status</span>
-                                    <strong class="status-item-val text-green" id="sys-model-status">● Serving Predictions</strong>
-                                </div>
-                                <div class="status-item">
-                                    <span class="status-item-label">Dataset Status</span>
-                                    <strong class="status-item-val" id="sys-dataset-status">80,000 Records Loaded</strong>
-                                </div>
-                                <div class="status-item">
-                                    <span class="status-item-label">FastAPI API</span>
-                                    <strong class="status-item-val text-green" id="sys-api-status">● Healthy (Port 8000)</strong>
-                                </div>
+                            <div class="snapshot-row">
+                                <span class="snap-key">Primary Valuation Driver:</span>
+                                <strong class="snap-val" id="snap-top-feat">--</strong>
+                            </div>
+                            <div class="snapshot-row">
+                                <span class="snap-key">Current Property Market Position:</span>
+                                <strong class="snap-val" id="snap-curr-pos">No active valuation</strong>
                             </div>
                         </div>
                     </div>
@@ -267,7 +255,7 @@
                     </div>
 
                     <div class="form-actions-bar">
-                        <button type="submit" id="analyze-btn" class="btn btn-primary btn-lg">⚡ ESTIMATE PROPERTY VALUE</button>
+                        <button type="submit" id="analyze-btn" class="btn btn-primary btn-lg">⚡ PREDICT PROPERTY VALUE</button>
                         <button type="button" class="btn btn-secondary" onclick="resetFormToDefaults()">↺ Reset to Defaults</button>
                     </div>
                 </form>
@@ -322,14 +310,14 @@
                             <div class="metric-sub">Direct usable area basis</div>
                         </div>
                         <div class="metric-card">
-                            <div class="metric-title">Valuation Score</div>
+                            <div class="metric-title">Specification Score</div>
                             <div class="metric-num text-blue" id="res-score">0.0 / 100</div>
-                            <div class="metric-sub">Model asset quality score</div>
+                            <div class="metric-sub">Physical attributes index</div>
                         </div>
                         <div class="metric-card">
-                            <div class="metric-title">Valuation Tier</div>
-                            <div class="metric-pill" id="res-tier">Standard Value Asset</div>
-                            <div class="metric-sub" id="res-tier-sub">Market classification</div>
+                            <div class="metric-title">Specification Tier</div>
+                            <div class="metric-pill" id="res-tier">--</div>
+                            <div class="metric-sub" id="res-tier-sub">Attribute classification</div>
                         </div>
                     </div>
 
@@ -713,13 +701,13 @@
                     <!-- Valuation Assessment Tier -->
                     <div class="assessment-banner">
                         <div class="assessment-left">
-                            <span class="assessment-label">VALUATION ASSESSMENT</span>
-                            <h2 class="assessment-title" id="ins-tier-title">PRIME INVESTMENT ASSET</h2>
-                            <p class="assessment-sub" id="ins-tier-sub">Upper Quartile Market (85.3th Percentile)</p>
+                            <span class="assessment-label">SPECIFICATION ASSESSMENT</span>
+                            <h2 class="assessment-title" id="ins-tier-title">NO ACTIVE VALUATION</h2>
+                            <p class="assessment-sub" id="ins-tier-sub">Run a property valuation to generate localized specification scoring.</p>
                         </div>
                         <div class="assessment-right">
                             <div class="score-dial">
-                                <span class="score-number" id="ins-score-num">94.5</span>
+                                <span class="score-number" id="ins-score-num">0.0</span>
                                 <span class="score-denom">/ 100</span>
                             </div>
                         </div>
